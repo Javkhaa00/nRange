@@ -2,10 +2,23 @@ import React from 'react';
 
 export const Header = () => {
     return (
-        <>
-            <h1>HELLO WORLD</h1>
-        </>
+        <div className="header" id="header-section">
+            <header>
+                <nav>
+                    <div className="header--logo">
+                        <img />
+                    </div>
+                    <ul>
+                        <li><a></a></li>
+                        <li><a></a></li>
+                        <li><a></a></li>
+                        <li><a></a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
     )
 };
 
 export default Header;
+

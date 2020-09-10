@@ -1,9 +1,10 @@
 import React from 'react'
-import Header from "../containers/header";
 
 export const Home = () => {
     return (
-        <Header />
+        <div>
+            <h1>DSADAS</h1>
+        </div>
     )
 }
 
