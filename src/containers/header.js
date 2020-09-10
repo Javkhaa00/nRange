@@ -5,9 +5,9 @@ export const Header = () => {
         <div className="header" id="header-section">
             <nav className="header--nav">
                 <div className="header--nav--logo">
-                    <img src="/assets/nRange.svg" alt="header-logo" />
+                    <img src="/assets/nRange-logo.png" alt="header-logo" />
                 </div>
-                <input spaceholder="SEARCH GOLF COURSES" />
+                <input className="header--nav--search" />
                 <ul>
                     <li><a>Product</a></li>
                     <li><a>Courses</a></li>

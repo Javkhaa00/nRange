@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  background-color: rgb(5, 10, 22);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,8 +11,11 @@
     flex-direction: row;
     &--logo {
         img {
-            // height: 8rem;
+            height: 5rem;
         }
+    }
+    &--search {
+
     }
   }
   li {
