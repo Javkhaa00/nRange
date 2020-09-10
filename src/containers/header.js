@@ -7,8 +7,14 @@ export const Header = () => {
                 <div className="header--nav--logo">
                     <img src="/assets/nRange-logo.png" alt="header-logo" />
                 </div>
-                <input className="header--nav--search" />
-                <ul>
+                <div className="header--nav--input">
+                    <input
+                        type="text"
+                        placeholder="Search Golf Courses"
+                        className="header--nav--search"
+                    />
+                </div>
+                <ul className="header--nav--buttons">
                     <li><a>Product</a></li>
                     <li><a>Courses</a></li>
                     <li><a>Stats</a></li>
