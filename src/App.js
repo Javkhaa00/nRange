@@ -5,6 +5,7 @@ import Courses from './pages/Courses';
 import Product from './pages/Product';
 import Stats from './pages/Stats';
 import Header from './containers/header';
+import Footer from './containers/footer';
 import {
   BrowserRouter as Router,
   Switch,
@@ -30,6 +31,7 @@ function App() {
           <Stats />
         </Route >
       </Switch>
+      <Footer />
     </Router>
   );
 }

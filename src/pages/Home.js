@@ -1,9 +1,10 @@
 import React from 'react'
+import Landing from '../containers/landing'
 
 export const Home = () => {
     return (
         <div>
-            <h1>DSADAS</h1>
+            <Landing />
         </div>
     )
 }

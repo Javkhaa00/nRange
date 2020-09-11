@@ -10,7 +10,7 @@ export const Header = () => {
                 <div className="header--nav--input">
                     <input
                         type="text"
-                        placeholder="Search Golf Courses"
+                        placeholder=" Search Golf Courses "
                         className="header--nav--search"
                     />
                 </div>

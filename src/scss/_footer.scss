@@ -1,0 +1,11 @@
+.footer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    &--subscription {
+        width: 100%;
+        background-image: url('/assets/subscribe.png');
+        background-repeat: no-repeat;
+    }
+}
