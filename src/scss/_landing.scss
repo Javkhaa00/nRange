@@ -24,20 +24,24 @@
     &--welcome {
       font-size: 28px;
       font-family: "Bebas Neue";
-      color: rgba(255, 255, 255, 0.75);
-      line-height: 1.279;
+      color: rgb(255, 255, 255);
+      line-height: 1.479;
       text-align: left;
     }
     &--title {
-      width: 80%;
-      font-size: 64px;
+      width: 100%;
+      font-size: 96px;
       font-family: "Bebas Neue";
       color: rgb(255, 255, 255);
-      line-height: 1.464;
+      line-height: 0.944;
       text-align: left;
     }
+    &--title::after {
+      content: " RANGEFINDER";
+      color: rgb(118, 189, 74);
+    }
     &--desc {
-      width: 60%;
+      width: 65%;
       font-size: 16px;
       font-family: "OpenSans", sans-serif;
       color: rgba(255, 255, 255, 0.5);
@@ -48,8 +52,8 @@
       display: flex;
       flex-direction: row;
       img {
-        width: 200px;
-        padding-top: 24px;
+        width: 154px;
+        padding-top: 12px;
         padding-right: 12px;
       }
     }
@@ -57,5 +61,7 @@
   &--phones {
     width: 30%;
     height: 100%;
+    display: flex;
+    align-items: center;
   }
 }

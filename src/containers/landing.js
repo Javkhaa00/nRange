@@ -11,7 +11,7 @@ const Landing = () => {
                     Welcome the leading
                 </div>
                 <div className="landing--text-wrapper--title">
-                    Smartphone golf gps rangefinder
+                    Smartphone golf gps
                 </div>
                 <div className="landing--text-wrapper--desc">
                     Distinctively empower quality schemas through web-enabled communities. Continually whiteboard emerging meta-services whereas.
@@ -22,8 +22,12 @@ const Landing = () => {
                 </div>
             </div>
             <div className="landing--phones">
-                <img src="/assets/samsung-s8-mockup.png" alt="samsung-8" />
-                <img src="/assets/iphone-x-mockup.png" alt="iphone-x" />
+                <div>
+                    <img src="/assets/samsung-s8-mockup.png" alt="samsung-8" />
+                </div>
+                <div>
+                    <img src="/assets/iphone-x-mockup.png" alt="iphone-x" />
+                </div>
             </div>
         </div>
     )
