@@ -6,6 +6,7 @@ import Product from './pages/Product';
 import Stats from './pages/Stats';
 import Header from './containers/header';
 import Footer from './containers/footer';
+import Info from './containers/info';
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,6 +17,7 @@ import {
 function App() {
   return (
     <Router>
+      <Info />
       <Header />
       <Switch>
         <Route path="/">

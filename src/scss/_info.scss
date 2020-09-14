@@ -1,0 +1,17 @@
+.info {
+  width: 100%;
+  background-color: rgb(30, 35, 46);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--email {
+    width: 60%;
+    font-size: 14px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    line-height: 1.429;
+    z-index: 17;
+  }
+}
