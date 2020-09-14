@@ -1,5 +1,5 @@
 .footer {
-   width: 100%;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,18 +19,18 @@
       justify-content: center;
       flex-direction: column;
       &--title {
-        font-size: 40px;
+        font-size: 38px;
         font-family: "Bebas Neue";
         color: rgb(255, 255, 255);
         line-height: 1.429;
         text-transform: uppercase;
       }
       &--title::after {
-          content: " our newsletter";
-          color: #78bc41;
+        content: " our newsletter";
+        color: #78bc41;
       }
       &--desc {
-        width: 30%;
+        width: 36%;
         font-size: 14px;
         font-weight: 500;
         font-family: "OpenSans", sans-serif;
@@ -48,8 +48,8 @@
           border-style: solid;
           border-radius: 10px;
           opacity: 0.302;
-          width: 455px;
-          height: 42px;
+          width: 382px;
+          height: 32px;
           outline: none;
         }
         &--button {
@@ -65,7 +65,7 @@
           text-transform: uppercase;
           background-color: rgb(120, 188, 65);
           width: 166px;
-          height: 46px;
+          height: 38px;
         }
       }
     }
