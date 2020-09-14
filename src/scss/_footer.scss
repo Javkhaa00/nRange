@@ -19,7 +19,7 @@
       flex-direction: column;
       padding-top: 24px;
       &--title {
-        font-size: 40px;
+        font-size: 38px;
         font-family: "Bebas Neue";
         color: rgb(255, 255, 255);
         line-height: 1.429;
@@ -31,7 +31,7 @@
       }
       &--desc {
         width: 30%;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 500;
         font-family: "OpenSans", sans-serif;
         color: rgba(255, 255, 255, 0.8);
@@ -49,7 +49,7 @@
           border-radius: 10px;
           opacity: 0.302;
           width: 455px;
-          height: 43px;
+          height: 42px;
           outline: none;
         }
         &--button {
@@ -65,7 +65,7 @@
           text-transform: uppercase;
           background-color: rgb(120, 188, 65);
           width: 166px;
-          height: 47px;
+          height: 46px;
         }
       }
     }
