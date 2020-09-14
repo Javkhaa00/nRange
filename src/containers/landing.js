@@ -22,10 +22,10 @@ const Landing = () => {
                 </div>
             </div>
             <div className="landing--phones">
-                <div>
+                <div className="landing--phones--iphone">
                     <img src="/assets/samsung-s8-mockup.png" alt="samsung-8" />
                 </div>
-                <div>
+                <div className="landing--phones--samsung">
                     <img src="/assets/iphone-x-mockup.png" alt="iphone-x" />
                 </div>
             </div>
