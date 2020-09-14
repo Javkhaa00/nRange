@@ -16,14 +16,46 @@
     }
   }
   &--text-wrapper {
-    width: 35%;
+    width: 30%;
     height: 100%;
     display: flex;
-    // background-color: yellow;
+    justify-content: center;
+    flex-direction: column;
+    &--welcome {
+      font-size: 28px;
+      font-family: "Bebas Neue";
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.279;
+      text-align: left;
+    }
+    &--title {
+      width: 80%;
+      font-size: 64px;
+      font-family: "Bebas Neue";
+      color: rgb(255, 255, 255);
+      line-height: 1.464;
+      text-align: left;
+    }
+    &--desc {
+      width: 60%;
+      font-size: 16px;
+      font-family: "OpenSans", sans-serif;
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 1.25;
+      text-align: left;
+    }
+    &--stores {
+      display: flex;
+      flex-direction: row;
+      img {
+        width: 200px;
+        padding-top: 24px;
+        padding-right: 12px;
+      }
+    }
   }
   &--phones {
-    width: 35%;
+    width: 30%;
     height: 100%;
-    // background-color: yellow;
   }
 }
