@@ -16,10 +16,10 @@
       width: 70%;
       height: 100%;
       display: flex;
+      justify-content: center;
       flex-direction: column;
-      padding-top: 24px;
       &--title {
-        font-size: 38px;
+        font-size: 40px;
         font-family: "Bebas Neue";
         color: rgb(255, 255, 255);
         line-height: 1.429;
@@ -31,7 +31,7 @@
       }
       &--desc {
         width: 30%;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 500;
         font-family: "OpenSans", sans-serif;
         color: rgba(255, 255, 255, 0.8);
