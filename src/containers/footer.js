@@ -16,9 +16,12 @@ const Footer = () => {
                         <div className="footer--sub--wrapper--row--button">Subscribe</div>
                     </div>
                 </div>
+                <div className="footer--sub--hand-phone">
+                    <img src="/assets/hand-and-phone.png" alt="hand-phone" />
+                </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Footer;

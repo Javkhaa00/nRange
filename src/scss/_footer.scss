@@ -12,6 +12,10 @@
     background-image: url("/assets/subscribe.png");
     background-repeat: no-repeat;
     background-size: cover;
+    &--hand-phone {
+      position: absolute;
+      right: 0;
+    }
     &--wrapper {
       width: 60%;
       height: 100%;
@@ -19,7 +23,7 @@
       justify-content: center;
       flex-direction: column;
       &--title {
-        font-size: 38px;
+        font-size: 32px;
         font-family: "Bebas Neue";
         color: rgb(255, 255, 255);
         line-height: 1.429;
@@ -48,7 +52,7 @@
           border-style: solid;
           border-radius: 10px;
           opacity: 0.302;
-          width: 382px;
+          width: 400px;
           height: 32px;
           outline: none;
         }
