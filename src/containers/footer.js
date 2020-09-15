@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
             <div className="footer--download">
                 <div className="footer--download--logo">
-                    <img src="/assets/nRange.svg" alt="footer-nrange-logo" />
+                    <img src="/assets/nrange-logo-footer.png" alt="footer-nrange-logo" />
                 </div>
                 <span className="footer--download--title">Download now for free</span>
                 <span className="footer--download--desc">Join the 1million+ golfers today</span>
