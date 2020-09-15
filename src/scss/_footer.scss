@@ -152,9 +152,11 @@
         display: flex;
         flex-direction: column;
         &--nrange {
-          padding-bottom: 24px;
+          padding-bottom: 12px;
         }
         &--social {
+          padding-left: 8px;
+          padding-bottom: 24px;
         }
       }
     }
