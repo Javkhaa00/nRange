@@ -1,14 +1,14 @@
-import React from 'react'
-import HomeLanding from '../containers/homeLanding'
-import Subscription from '../containers/subscription'
+import React from 'react';
+import HomeLanding from '../containers/homeLanding';
+import HomeSubscription from '../containers/homeSubscription';
 
 export const Home = () => {
     return (
         <>
             <HomeLanding />
-            <Subscription />
+            <HomeSubscription />
         </>
-    )
-}
+    );
+};
 
 export default Home;

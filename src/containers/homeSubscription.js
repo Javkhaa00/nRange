@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Subscription = () => {
+const HomeSubscription = () => {
     return (
         <div className="subs">
             <span className="subs--title">Subscriptions</span>
@@ -34,4 +34,4 @@ const Subscription = () => {
     )
 }
 
-export default Subscription
+export default HomeSubscription
