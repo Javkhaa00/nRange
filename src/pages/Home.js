@@ -1,11 +1,11 @@
 import React from 'react'
-import Landing from '../containers/landing'
+import HomeLanding from '../containers/homeLanding'
 import Subscription from '../containers/subscription'
 
 export const Home = () => {
     return (
         <>
-            <Landing />
+            <HomeLanding />
             <Subscription />
         </>
     )
