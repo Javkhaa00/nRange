@@ -40,7 +40,11 @@ const Footer = () => {
                             <img src="/assets/nRange-logo-black.png" alt="footer-logo" />
                         </div>
                         <div className="footer--extra--wrapper--logos--social">
-                            <FontAwesomeIcon className="fontawe" icon={faFacebookF} size="lg" />
+                            <FontAwesomeIcon 
+                                style={{paddingRight: "30px"}}
+                                className="fontawe"
+                                icon={faFacebookF}
+                                size="lg" />
                             <FontAwesomeIcon className="fontawe" icon={faTwitter} size="lg" />
                             <FontAwesomeIcon className="fontawe" icon={faInstagram} size="lg" />
                         </div>
@@ -77,7 +81,7 @@ const Footer = () => {
                 </span>
                 <div className="footer--all-rights--logos">
                     <img src="/assets/app-store.svg" alt="app-store" />
-                    <img style={{paddingLeft: "12px"}} src="/assets/google-play.svg" alt="google-play" />
+                    <img style={{ paddingLeft: "12px" }} src="/assets/google-play.svg" alt="google-play" />
                 </div>
             </div>
         </div>
