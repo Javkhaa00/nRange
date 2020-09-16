@@ -7,7 +7,10 @@ const CourseLanding = () => {
                 <img src="/assets/background.png" alt="background" />
             </div>
             <span className="course-landing--title"></span>
-            <span className="course-landing--desc">Courses</span>
+            <div className="course-landing--pseudo">
+                <span className="course-landing--courses">Courses</span>
+                <span className="course-landing--worldwide">Worldwide</span>
+            </div>
         </div>
     )
 }

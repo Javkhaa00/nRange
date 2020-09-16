@@ -23,7 +23,7 @@
     &::before {
       content: "We have more than";
       display: block;
-      font-size: 48px;
+      font-size: 36px;
       font-family: "Bebas Neue";
       color: rgb(120, 188, 65);
       text-align: center;
@@ -39,22 +39,27 @@
       justify-content: center;
     }
   }
-  &--desc {
+  &--pseudo {
+    display: flex;
+  }
+  &--courses {
     border-radius: 10px;
     background-color: rgb(51, 156, 0);
-    width: 142px;
-    height: 44px;
-    font-size: 48px;
+    width: 108px;
+    height: 32px;
+    font-size: 36px;
     line-height: 1.05;
     font-family: "Bebas Neue";
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 1px;
-    &::after {
-      content: " Worldwide";
-      font-size: 48px;
-      font-family: "Bebas Neue";
-      color: rgb(255, 255, 255);
-    }
+    margin-right: 8px;
+  }
+  &--worldwide {
+    line-height: 1.05;
+    font-size: 36px;
+    font-family: "Bebas Neue";
+    align-items: center;
+    color: rgb(255, 255, 255);
   }
 }
