@@ -1,10 +1,11 @@
 import React from 'react';
+import CourseLanding from '../containers/courseLanding';
 
 const Courses = () => {
     return (
-        <div>
-            <h1>DASDSAD</h1>
-        </div>
+        <>
+            <CourseLanding />
+        </>
     )
 }
 

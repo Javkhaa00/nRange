@@ -56,21 +56,16 @@
   li {
     list-style: none;
     padding-left: 50px;
-    a {
-      //   font-size: 24px;
-      //   font-family: "Open Sans", sans-serif;
-      //   font-weight: 400;
-      //   color: rgb(255, 255, 255);
-      text-transform: uppercase;
-      line-height: 0.833;
-      //   text-align: center;
-      //   z-index: 1;
-      font-size: 24px;
-      font-family: "Bebas Neue";
-      color: rgb(255, 255, 255);
-      line-height: 0.833;
-      text-align: center;
-      z-index: 1;
-    }
+  }
+  &--buttons {
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 0.833;
+    font-size: 24px;
+    font-family: "Bebas Neue";
+    color: rgb(255, 255, 255);
+    line-height: 0.833;
+    text-align: center;
+    z-index: 1;
   }
 }
