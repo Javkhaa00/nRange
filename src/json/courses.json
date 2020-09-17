@@ -1,238 +1,236 @@
-{
-  "golfCourse": [
-    {
-      "name": "Australia"
-    },
-    {
-      "name": "Austria"
-    },
-    {
-      "name": "Barbados"
-    },
-    {
-      "name": "Belgium"
-    },
-    {
-      "name": "Bermuda"
-    },
-    {
-      "name": "Brasil"
-    },
-    {
-      "name": "Canada"
-    },
-    {
-      "name": "Chile"
-    },
-    {
-      "name": "Danmark"
-    },
-    {
-      "name": "Dominican Republic"
-    },
-    {
-      "name": "Germany"
-    },
-    {
-      "name": "Ireland"
-    },
-    {
-      "name": "Malaysia"
-    },
-    {
-      "name": "Mexico"
-    },
-    {
-      "name": "Netherlands"
-    },
-    {
-      "name": "Portugal"
-    },
-    {
-      "name": "Qatar"
-    },
-    {
-      "name": "Singapore"
-    },
-    {
-      "name": "South Africa"
-    },
-    {
-      "name": "Sweden"
-    },
-    {
-      "name": "Switzerland"
-    },
-    {
-      "name": "United Kingdom"
-    },
-    {
-      "name": "Argentina"
-    },
-    {
-      "name": "Aruba"
-    },
-    {
-      "name": "Bahrain"
-    },
-    {
-      "name": "Bangladesh"
-    },
-    {
-      "name": "Bolivia"
-    },
-    {
-      "name": "Botswana"
-    },
-    {
-      "name": "China"
-    },
-    {
-      "name": "Columbia"
-    },
-    {
-      "name": "Costa Rica"
-    },
-    {
-      "name": "Cyprus"
-    },
-    {
-      "name": "Czech Republic"
-    },
-    {
-      "name": "Egypt"
-    },
-    {
-      "name": "El Salvador"
-    },
-    {
-      "name": "France"
-    },
-    {
-      "name": "Greece"
-    },
-    {
-      "name": "Guatermala"
-    },
-    {
-      "name": "Hong Kong"
-    },
-    {
-      "name": "India"
-    },
-    {
-      "name": "Indonesia"
-    },
-    {
-      "name": "Israel"
-    },
-    {
-      "name": "Italy"
-    },
-    {
-      "name": "Jamaica"
-    },
-    {
-      "name": "Japan"
-    },
-    {
-      "name": "Kenya"
-    },
-    {
-      "name": "Kuwait"
-    },
-    {
-      "name": "Luxembourg"
-    },
-    {
-      "name": "Mauritius"
-    },
-    {
-      "name": "Namibia"
-    },
-    {
-      "name": "New Zealand"
-    },
-    {
-      "name": "Nicaragua"
-    },
-    {
-      "name": "Nigeria"
-    },
-    {
-      "name": "Norway"
-    },
-    {
-      "name": "Oman"
-    },
-    {
-      "name": "Pakistan"
-    },
-    {
-      "name": "Panama"
-    },
-    {
-      "name": "Paraguay"
-    },
-    {
-      "name": "Peru"
-    },
-    {
-      "name": "Philippines"
-    },
-    {
-      "name": "Poland"
-    },
-    {
-      "name": "Puerto Rico"
-    },
-    {
-      "name": "Saint Kitts and Nevi"
-    },
-    {
-      "name": "Saudi Arabia"
-    },
-    {
-      "name": "Slovokia"
-    },
-    {
-      "name": "Spain"
-    },
-    {
-      "name": "Swaziland"
-    },
-    {
-      "name": "Taiwan"
-    },
-    {
-      "name": "Thailand"
-    },
-    {
-      "name": "Trinidad and Tobago"
-    },
-    {
-      "name": "Turkey"
-    },
-    {
-      "name": "Uganda"
-    },
-    {
-      "name": "United Arab Emirates"
-    },
-    {
-      "name": "Uruguay"
-    },
-    {
-      "name": "Venezuela"
-    },
-    {
-      "name": "Vietnam"
-    },
-    {
-      "name": "Zambia"
-    },
-    {
-      "name": "Zimbabwe"
-    }
-  ]
-}
+[
+  {
+    "name": "Australia"
+  },
+  {
+    "name": "Austria"
+  },
+  {
+    "name": "Barbados"
+  },
+  {
+    "name": "Belgium"
+  },
+  {
+    "name": "Bermuda"
+  },
+  {
+    "name": "Brasil"
+  },
+  {
+    "name": "Canada"
+  },
+  {
+    "name": "Chile"
+  },
+  {
+    "name": "Danmark"
+  },
+  {
+    "name": "Dominican Republic"
+  },
+  {
+    "name": "Germany"
+  },
+  {
+    "name": "Ireland"
+  },
+  {
+    "name": "Malaysia"
+  },
+  {
+    "name": "Mexico"
+  },
+  {
+    "name": "Netherlands"
+  },
+  {
+    "name": "Portugal"
+  },
+  {
+    "name": "Qatar"
+  },
+  {
+    "name": "Singapore"
+  },
+  {
+    "name": "South Africa"
+  },
+  {
+    "name": "Sweden"
+  },
+  {
+    "name": "Switzerland"
+  },
+  {
+    "name": "United Kingdom"
+  },
+  {
+    "name": "Argentina"
+  },
+  {
+    "name": "Aruba"
+  },
+  {
+    "name": "Bahrain"
+  },
+  {
+    "name": "Bangladesh"
+  },
+  {
+    "name": "Bolivia"
+  },
+  {
+    "name": "Botswana"
+  },
+  {
+    "name": "China"
+  },
+  {
+    "name": "Columbia"
+  },
+  {
+    "name": "Costa Rica"
+  },
+  {
+    "name": "Cyprus"
+  },
+  {
+    "name": "Czech Republic"
+  },
+  {
+    "name": "Egypt"
+  },
+  {
+    "name": "El Salvador"
+  },
+  {
+    "name": "France"
+  },
+  {
+    "name": "Greece"
+  },
+  {
+    "name": "Guatermala"
+  },
+  {
+    "name": "Hong Kong"
+  },
+  {
+    "name": "India"
+  },
+  {
+    "name": "Indonesia"
+  },
+  {
+    "name": "Israel"
+  },
+  {
+    "name": "Italy"
+  },
+  {
+    "name": "Jamaica"
+  },
+  {
+    "name": "Japan"
+  },
+  {
+    "name": "Kenya"
+  },
+  {
+    "name": "Kuwait"
+  },
+  {
+    "name": "Luxembourg"
+  },
+  {
+    "name": "Mauritius"
+  },
+  {
+    "name": "Namibia"
+  },
+  {
+    "name": "New Zealand"
+  },
+  {
+    "name": "Nicaragua"
+  },
+  {
+    "name": "Nigeria"
+  },
+  {
+    "name": "Norway"
+  },
+  {
+    "name": "Oman"
+  },
+  {
+    "name": "Pakistan"
+  },
+  {
+    "name": "Panama"
+  },
+  {
+    "name": "Paraguay"
+  },
+  {
+    "name": "Peru"
+  },
+  {
+    "name": "Philippines"
+  },
+  {
+    "name": "Poland"
+  },
+  {
+    "name": "Puerto Rico"
+  },
+  {
+    "name": "Saint Kitts and Nevi"
+  },
+  {
+    "name": "Saudi Arabia"
+  },
+  {
+    "name": "Slovokia"
+  },
+  {
+    "name": "Spain"
+  },
+  {
+    "name": "Swaziland"
+  },
+  {
+    "name": "Taiwan"
+  },
+  {
+    "name": "Thailand"
+  },
+  {
+    "name": "Trinidad and Tobago"
+  },
+  {
+    "name": "Turkey"
+  },
+  {
+    "name": "Uganda"
+  },
+  {
+    "name": "United Arab Emirates"
+  },
+  {
+    "name": "Uruguay"
+  },
+  {
+    "name": "Venezuela"
+  },
+  {
+    "name": "Vietnam"
+  },
+  {
+    "name": "Zambia"
+  },
+  {
+    "name": "Zimbabwe"
+  }
+]
