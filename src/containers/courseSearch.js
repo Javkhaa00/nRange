@@ -59,7 +59,7 @@ const CourseSearch = () => {
                             {browseCourse.map(renderList)}
                         </div>
                     </div>
-                    <div className="course-search--lists--wrapper--empty" />
+                    {/* <div className="course-search--lists--wrapper--empty" /> */}
                     <div className="course-search--lists--wrapper--international">
                         <span className="course-search--lists--wrapper--title">
                             International Golf Courses:

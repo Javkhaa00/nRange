@@ -69,6 +69,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        padding-right: 20%;
         &--texts {
           height: 75%;
           width: 100%;
@@ -76,9 +77,6 @@
           flex-direction: column;
           flex-wrap: wrap;
         }
-      }
-      &--empty {
-        width: 20%;
       }
       &--international {
         height: 100%;
