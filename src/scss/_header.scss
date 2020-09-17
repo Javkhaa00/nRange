@@ -67,5 +67,14 @@
     line-height: 0.833;
     text-align: center;
     z-index: 1;
+    padding: 1px 12px 1px 12px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+  }
+  &--buttons:hover {
+    background-color: rgb(120, 188, 65);
+    color: rgb(30, 35, 46);
+    transition: 0.2s ease-in-out;
   }
 }
+
