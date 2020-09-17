@@ -30,7 +30,7 @@ const CourseSearch = () => {
                     </div>
                     <div className="course-search--wrapper--header--box">
                         <span className="course-search--wrapper--header--box--title">
-                            Browse course by us State:
+                            International Golf Courses:
                         </span>
                         <div className="course-search--wrapper--header--box--select" >
                             <CourseSelect />
