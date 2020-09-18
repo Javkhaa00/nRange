@@ -33,12 +33,16 @@ export const Header = () => {
                         <Link className="header--buttons" to="/courses">Courses</Link>
                     </li>
                     <li>
-                        <div
+                        <Link
+                            to ="/"
                             onClick={() => {
-                                window.location.href = "subscribe-section"
+                                window.scrollTo({
+                                    top: 900,
+                                    behavior: 'smooth'
+                                });
                             }}
                             className="header--buttons"
-                        >Subscribe</div>
+                        >Subscribe</Link>
                     </li>
                 </ul>
             </nav>
