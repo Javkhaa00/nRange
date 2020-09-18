@@ -23,23 +23,23 @@
       align-items: center;
     }
     &--search {
-      font-size: 24px;
-      font-family: "Bebas Neue";
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.502);
-      line-height: 0.833;
-      border-width: 2px;
-      border-color: rgb(0, 0, 0);
-      border-style: solid;
+      font-size: 18px;
+      font-family: "OpenSans", sans-serif;
+      color: rgba(255, 255, 255, 0.78);
+      text-indent: 12px;
+      border: 2px solid rgb(0, 0, 0);
+      background-color: rgba(255, 255, 255, 0.2);
       border-radius: 20px;
-      //   background-color: rgb(255, 255, 255);
-      opacity: 0.2;
-      width: 418px;
-      height: 38px;
+      width: 368px;
+      height: 32px;
       z-index: 1;
-      outline: none;
+      outline: 0;
     }
-
+    &--search::placeholder {
+      font-family: "Bebas Neue";
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 20px;
+    }
     &--buttons {
       width: 40%;
       display: flex;
@@ -67,9 +67,10 @@
     line-height: 1.2;
     text-align: center;
     z-index: 1;
-    padding: 1px 16px 1px 16px;
+    padding: 2px 16px 1px 16px;
     border-radius: 10px;
     transition: 0.1s ease-in-out;
+    outline: none;
   }
   &--buttons:hover {
     background-color: rgb(120, 188, 65);

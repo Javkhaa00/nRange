@@ -49,28 +49,32 @@
         display: flex;
         align-items: center;
         &--input {
+          font-size: 18px;
+          font-weight: 400;
+          text-indent: 12px;
+          font-family: "OpenSans", sans-serif;
+          text-align: left;
           border-width: 2px;
-          border-color: rgb(255, 255, 255);
+          background-color: transparent;
+          color: rgba(255, 255, 255, 0.79);
+          border-color: rgba(255, 255, 255, 0.302);
           border-style: solid;
           border-radius: 10px;
-          opacity: 0.302;
           width: 400px;
           height: 32px;
           outline: none;
         }
         &--button {
           margin-left: 12px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
           font-size: 24px;
           font-family: "Bebas Neue";
           color: rgb(245, 246, 254);
-          line-height: 0.769;
+          line-height: 1.73;
+          text-align: center;
           border-radius: 10px;
           text-transform: uppercase;
           background-color: rgb(120, 188, 65);
-          width: 166px;
+          width: 146px;
           height: 38px;
         }
       }
@@ -192,4 +196,9 @@
 .fontawe {
   padding-top: 24px;
   padding-right: 24px;
+}
+
+
+input::placeholder {
+  
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { scroller } from "react-scroll";
+// import { animateScroll as scroll, scroller } from 'react-scroll';
 import { Link } from 'react-router-dom';
 
 export const Header = () => {
@@ -19,14 +19,24 @@ export const Header = () => {
                 <div className="header--nav--input">
                     <input
                         type="text"
-                        placeholder=" Search Golf Courses "
+                        placeholder=" Search Golf Courses"
                         className="header--nav--search"
                     />
                 </div>
                 <ul className="header--nav--buttons">
                     <li><Link className="header--buttons" to="/">Product</Link></li>
                     <li><Link className="header--buttons" to="/courses">Courses</Link></li>
-                    <li><div className="header--buttons">Subscribe</div></li>
+                    <li>
+                        <div
+                            onClick={() => {
+                                window.scrollTo({
+                                    top: 900,
+                                    behavior: 'smooth'
+                                });
+                            }}
+                            className="header--buttons"
+                        >Subscribe</div>
+                    </li>
                 </ul>
             </nav>
         </div>
