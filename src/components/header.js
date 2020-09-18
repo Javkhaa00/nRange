@@ -20,7 +20,7 @@ export const Header = () => {
                 <div className="header--nav--input">
                     <input
                         type="text"
-                        placeholder=" Search Golf Courses"
+                        placeholder="Search Golf Courses"
                         className="header--nav--search"
                     />
                     <FontAwesomeIcon className="search" icon={faSearch} size="1x" />
