@@ -2,8 +2,6 @@ import React from 'react';
 import './App.scss';
 import Home from './pages/Home';
 import Courses from './pages/Courses';
-import Product from './pages/Product';
-import Stats from './pages/Stats';
 import Header from './containers/header';
 import Footer from './containers/footer';
 import Info from './containers/info';
@@ -14,6 +12,7 @@ import {
 } from "react-router-dom";
 
 function App() {
+
   return (
     <Router>
       <Info />
@@ -22,19 +21,17 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/product">
-          <Product />
+        <Route exact path="/">
+          <Home />
         </Route>
         <Route exact path="/courses">
           <Courses />
         </Route>
-        <Route exact path="/stats">
-          <Stats />
-        </Route >
       </Switch>
       <Footer />
     </Router>
   );
+
 }
 
 export default App;

@@ -5,18 +5,27 @@ import courseList from '../json/courses.json';
 
 const CourseSearch = () => {
 
-    const options = [
-        { value: 'chocolate', label: 'Chocolate' },
-        { value: 'strawberry', label: 'Strawberry' },
-        { value: 'vanilla', label: 'Vanilla' }
-    ]
+    const BrowseSelect = (() => {
+        let new_a = [];
+        browseCourse.map((per, i) => {
+            new_a.push({
+                value: per.name, label: per.name
+            });
+            return per;
+        })
+        return <Select options={new_a} />;
+    })
 
-    const BrowseSelect = () => (
-        <Select options={options} />
-    )
-    const CourseSelect = () => (
-        <Select options={options} />
-    )
+    const CourseSelect = (() => {
+        let new_a = [];
+        courseList.map((per, i) => {
+            new_a.push({
+                value: per.name, label: per.name
+            });
+            return per;
+        })
+        return <Select options={new_a} />;
+    })
 
     const renderList = (el) => {
 
