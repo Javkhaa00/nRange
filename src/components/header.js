@@ -1,5 +1,6 @@
 import React from 'react';
-// import { animateScroll as scroll, scroller } from 'react-scroll';
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from 'react-router-dom';
 
 export const Header = () => {
@@ -22,6 +23,7 @@ export const Header = () => {
                         placeholder=" Search Golf Courses"
                         className="header--nav--search"
                     />
+                    <FontAwesomeIcon className="search" icon={faSearch} size="1x" />
                 </div>
                 <ul className="header--nav--buttons">
                     <li><Link className="header--buttons" to="/">Product</Link></li>
