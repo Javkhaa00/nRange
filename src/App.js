@@ -18,13 +18,13 @@ function App() {
       <Info />
       <Header />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/" component={Home}>
           <Home />
         </Route>
-        <Route exact path="/">
+        <Route exact path="/" component={Home} >
           <Home />
         </Route>
-        <Route exact path="/courses">
+        <Route path="/courses" exact={true} component={Courses} >
           <Courses />
         </Route>
       </Switch>

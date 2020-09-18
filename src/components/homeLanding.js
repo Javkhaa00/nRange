@@ -2,7 +2,7 @@ import React from 'react';
 
 const HomeLanding = () => {
     return (
-        <div className="landing">
+        <div className="landing" id="firstpage-section">
             <div className="landing--background">
                 <img src="/assets/background.png" alt="background" />
             </div>

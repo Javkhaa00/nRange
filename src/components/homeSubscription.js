@@ -1,8 +1,9 @@
 import React from 'react';
 
 const HomeSubscription = () => {
+
     return (
-        <div className="subs" id="subscribe">
+        <div className="subs" id="subscribe-section">
             <span className="subs--title">Subscriptions</span>
             <span className="subs--desc">
                 Monotonectally iterate best-of-breed customer service whereas low-risk high-yield imperatives. Holisticly leverage existing.
@@ -31,7 +32,7 @@ const HomeSubscription = () => {
                 </div>
             </template>
         </div>
-    )
-}
+    );
+};
 
-export default HomeSubscription
+export default HomeSubscription;

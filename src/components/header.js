@@ -1,7 +1,7 @@
 import React from 'react';
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export const Header = () => {
 
@@ -26,15 +26,16 @@ export const Header = () => {
                     <FontAwesomeIcon className="search" icon={faSearch} size="1x" />
                 </div>
                 <ul className="header--nav--buttons">
-                    <li><Link className="header--buttons" to="/">Product</Link></li>
-                    <li><Link className="header--buttons" to="/courses">Courses</Link></li>
+                    <li>
+                        <Link className="header--buttons" to="/">Product</Link>
+                    </li>
+                    <li>
+                        <Link className="header--buttons" to="/courses">Courses</Link>
+                    </li>
                     <li>
                         <div
                             onClick={() => {
-                                window.scrollTo({
-                                    top: 900,
-                                    behavior: 'smooth'
-                                });
+                                window.location.href = "subscribe-section"
                             }}
                             className="header--buttons"
                         >Subscribe</div>
