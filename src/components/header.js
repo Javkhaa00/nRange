@@ -1,5 +1,5 @@
 import React from 'react';
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
@@ -43,7 +43,7 @@ export const Header = () => {
                 </ul>
             </nav>
         </div>
-    )
+    );
 };
 
 export default Header;

@@ -12,7 +12,7 @@ const CourseLanding = () => {
                 <span className="course-landing--worldwide">Worldwide</span>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default CourseLanding;

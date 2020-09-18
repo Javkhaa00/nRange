@@ -5,7 +5,7 @@ const Info = () => {
         <div className="info">
             <div className="info--email">info@email.com</div>
         </div>
-    )
-}
+    );
+};
 
 export default Info;

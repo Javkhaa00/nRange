@@ -30,7 +30,7 @@ const HomeLanding = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default HomeLanding;
