@@ -1,6 +1,6 @@
 import React from 'react';
-import CourseLanding from '../containers/courseLanding';
-import CourseSearch from '../containers/courseSearch';
+import CourseLanding from '../components/courseLanding';
+import CourseSearch from '../components/courseSearch';
 
 const Courses = () => {
     return (

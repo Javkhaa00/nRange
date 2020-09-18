@@ -2,9 +2,9 @@ import React from 'react';
 import './App.scss';
 import Home from './pages/Home';
 import Courses from './pages/Courses';
-import Header from './containers/header';
-import Footer from './containers/footer';
-import Info from './containers/info';
+import Header from './components/header';
+import Footer from './components/footer';
+import Info from './components/info';
 import {
   BrowserRouter as Router,
   Switch,

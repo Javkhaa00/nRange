@@ -1,6 +1,6 @@
 import React from 'react';
-import HomeLanding from '../containers/homeLanding';
-import HomeSubscription from '../containers/homeSubscription';
+import HomeLanding from '../components/homeLanding';
+import HomeSubscription from '../components/homeSubscription';
 
 export const Home = (props) => {
 
