@@ -34,7 +34,7 @@ export const Header = () => {
                     </li>
                     <li>
                         <Link
-                            to ="/"
+                            to="/"
                             onClick={() => {
                                 window.scrollTo({
                                     top: 930,
