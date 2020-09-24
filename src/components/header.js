@@ -27,7 +27,7 @@ export const Header = () => {
                 </div>
                 <ul className="header--nav--buttons">
                     <li>
-                        <Link className="header--buttons" to="/">Product</Link>
+                        <Link className="header--buttons" to="/">Products</Link>
                     </li>
                     <li>
                         <Link className="header--buttons" to="/courses">Courses</Link>

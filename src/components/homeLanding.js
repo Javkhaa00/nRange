@@ -7,18 +7,22 @@ const HomeLanding = () => {
                 <img src="/assets/background.png" alt="background" />
             </div>
             <div className="landing--text-wrapper">
-                <div className="landing--text-wrapper--welcome">
+                <span className="landing--text-wrapper--welcome">
                     Welcome the leading
-                </div>
-                <div className="landing--text-wrapper--title">
+                </span>
+                <span className="landing--text-wrapper--title">
                     Smartphone golf gps
-                </div>
-                <div className="landing--text-wrapper--desc">
-                    Distinctively empower quality schemas through web-enabled communities. Continually whiteboard emerging meta-services whereas.
-                </div>
+                </span>
+                <span className="landing--text-wrapper--desc">
+                    Schemas through web-enabled communities. Continually whiteboard emerging meta-services whereas.
+                </span>
                 <div className="landing--text-wrapper--stores">
-                    <img src="/assets/app-store.svg" alt="app-store" />
-                    <img src="/assets/google-play.svg" alt="google-play" />
+                    <a href="http://itunes.apple.com/us/app/nrange-golf-gps/id366108491?mt=8" target="_blank">
+                        <img src="/assets/app-store.svg" alt="app-store" />
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.nrangegolfgps" target="_blank">
+                        <img src="/assets/google-play.svg" alt="google-play" />
+                    </a>
                 </div>
             </div>
             <div className="landing--phones">

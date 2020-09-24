@@ -29,8 +29,12 @@ const Footer = () => {
                 <span className="footer--download--title">Download now for free</span>
                 <span className="footer--download--desc">Join the 1million+ golfers today</span>
                 <div className="footer--download--stores">
-                    <img src="/assets/app-store.svg" alt="app-store" />
-                    <img src="/assets/google-play.svg" alt="google-play" />
+                    <a href="http://itunes.apple.com/us/app/nrange-golf-gps/id366108491?mt=8" target="_blank">
+                        <img src="/assets/app-store.svg" alt="app-store" />
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.nrangegolfgps" target="_blank">
+                        <img src="/assets/google-play.svg" alt="google-play" />
+                    </a>
                 </div>
             </div>
             <div className="footer--extra">
@@ -40,27 +44,27 @@ const Footer = () => {
                             <img src="/assets/nRange-logo-black.png" alt="footer-logo" />
                         </div>
                         <div className="footer--extra--wrapper--logos--social">
-                            <FontAwesomeIcon 
-                                style={{paddingRight: "30px"}}
-                                className="fontawe"
-                                icon={faFacebookF}
-                                size="lg" />
-                            <FontAwesomeIcon className="fontawe" icon={faTwitter} size="lg" />
-                            <FontAwesomeIcon className="fontawe" icon={faInstagram} size="lg" />
+                            <a className="black" href="https://www.facebook.com/nrangegolfgps" target="_blank">
+                                <FontAwesomeIcon
+                                    style={{ paddingRight: "30px" }}
+                                    className="fontawe"
+                                    icon={faFacebookF}
+                                    size="lg" />
+                            </a>
+                            <a className="black">
+                                <FontAwesomeIcon className="fontawe" icon={faTwitter} size="lg" />
+                            </a>
+                            <a className="black" href="https://instagram.com/nrangegolfgps" target="_blank">
+                                <FontAwesomeIcon className="fontawe" icon={faInstagram} size="lg" />
+                            </a>
                         </div>
                     </div>
                     <div className="footer--extra--wrapper--column">
                         <ul>
                             <li className="footer--extra--title">About</li>
-                            <li className="footer--extra--desc">Company</li>
-                            <li className="footer--extra--desc">Careers</li>
-                            <li className="footer--extra--desc">Blog</li>
-                        </ul>
-                    </div>
-                    <div className="footer--extra--wrapper--column">
-                        <ul>
-                            <li className="footer--extra--title">For Golfers</li>
-                            <li className="footer--extra--desc">Company</li>
+                            <li className="footer--extra--desc">
+                                <a className="black" href="https://infinite.mn/#/" target="_blank">Company</a>
+                            </li>
                             <li className="footer--extra--desc">Careers</li>
                             <li className="footer--extra--desc">Blog</li>
                         </ul>
@@ -68,7 +72,9 @@ const Footer = () => {
                     <div className="footer--extra--wrapper--column">
                         <ul>
                             <li className="footer--extra--title">Business/Partnerships</li>
-                            <li className="footer--extra--desc">Company</li>
+                            <li className="footer--extra--desc">
+                                <a className="black" href="https://infinite.mn/#/" target="_blank">Company</a>
+                            </li>
                             <li className="footer--extra--desc">Careers</li>
                             <li className="footer--extra--desc">Blog</li>
                         </ul>
@@ -77,11 +83,16 @@ const Footer = () => {
             </div>
             <div className="footer--all-rights">
                 <span className="footer--all-rights--desc">
-                    © 2020 Nrange Golf Gps. All rights reserved. Terms & Conditions
+                    Copyright © 2008-2020 nRange Golf GPS Developed by Infinite Solutions, LLC
+                    nRange and nRange Golf GPS are trademarks or registered trademarks of, LLC in the United States and other countries. Terms of Service
                 </span>
                 <div className="footer--all-rights--logos">
-                    <img src="/assets/app-store.svg" alt="app-store" />
-                    <img style={{ paddingLeft: "12px" }} src="/assets/google-play.svg" alt="google-play" />
+                    <a href="http://itunes.apple.com/us/app/nrange-golf-gps/id366108491?mt=8" target="_blank">
+                        <img src="/assets/app-store.svg" alt="app-store" />
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.nrangegolfgps" target="_blank">
+                        <img style={{ paddingLeft: "12px" }} src="/assets/google-play.svg" alt="google-play" />
+                    </a>
                 </div>
             </div>
         </div>
