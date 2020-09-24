@@ -4,7 +4,6 @@ const HomeLanding = () => {
     return (
         <div className="landing" id="firstpage-section">
             <div className="landing--background">
-                <img src="/assets/background.png" alt="background" />
             </div>
             <div className="landing--text-wrapper">
                 <span className="landing--text-wrapper--welcome">

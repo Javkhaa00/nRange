@@ -10,10 +10,11 @@
   &--background {
     position: absolute;
     left: 10%;
-    z-index: 0;
-    img {
-      opacity: 0.141;
-    }
+    background-image: url("/assets/background.png");
+    height: 90%;
+    opacity: 0.14;
+    width: 100%;
+    background-repeat: no-repeat;
   }
   &--text-wrapper {
     width: 30%;
