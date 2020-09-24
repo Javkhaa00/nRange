@@ -19,8 +19,26 @@
     color: rgb(117, 117, 117);
     line-height: 1.429;
     text-align: center;
-    padding-bottom: 32px;
+    padding-bottom: 12px;
   }
+  &--email {
+    font-size: 18px;
+    font-family: "OpenSans", sans-serif;
+    color: rgba(0, 0, 0, 0.75);
+    text-indent: 16px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    width: 408px;
+    height: 32px;
+    z-index: 1;
+    outline: 0;
+  }
+  &--email::placeholder {
+      font-family: "Bebas Neue";
+      color: rgba(0, 0, 0, 0.3);
+      font-size: 20px;
+    }
   &--wrapper {
     width: 60%;
     display: flex;

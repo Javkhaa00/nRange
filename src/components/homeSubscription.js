@@ -5,9 +5,11 @@ const HomeSubscription = () => {
     return (
         <div className="subs" id="subscribe-section">
             <span className="subs--title">OUR SUBSCRIPTION PLANS</span>
+            <span className="subs--desc">For registered users only (Optional)</span>
             <input
                 type="text"
-                placeholder="Search Golf Courses"
+                placeholder="Enter your email here"
+                className="subs--email"
             />
             <div className="subs--wrapper">
                 <template className="subs--wrapper--side">
