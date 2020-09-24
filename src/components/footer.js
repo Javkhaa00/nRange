@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="footer--sub">
-                <div className="footer--sub--wrapper">
+                {/* <div className="footer--sub--wrapper">
                     <span className="footer--sub--wrapper--title">
                         Subscribe to
                     </span>
@@ -17,7 +17,7 @@ const Footer = () => {
                         <input className="footer--sub--wrapper--row--input" />
                         <span className="footer--sub--wrapper--row--button">Subscribe</span>
                     </div>
-                </div>
+                </div> */}
                 <div className="footer--sub--hand-phone">
                     <img src="/assets/hand-and-phone.png" alt="hand-phone" />
                 </div>
@@ -63,10 +63,14 @@ const Footer = () => {
                         <ul>
                             <li className="footer--extra--title">About</li>
                             <li className="footer--extra--desc">
-                                <a className="black" href="https://infinite.mn/#/" target="_blank">Company</a>
+                                <a className="black" href="https://www.facebook.com/nrangegolfgps" target="_blank">Facebook</a>
                             </li>
-                            <li className="footer--extra--desc">Careers</li>
-                            <li className="footer--extra--desc">Blog</li>
+                            <li className="footer--extra--desc">
+                                <a className="black" href="https://instagram.com/nrangegolfgps" target="_blank">Instagram</a>
+                            </li>
+                            <li className="footer--extra--desc">
+                                <a className="black" href="mailto:nRange@nrange.com?subject=To nRange&body=Support Us" target="_blank">Support</a>
+                            </li>
                         </ul>
                     </div>
                     <div className="footer--extra--wrapper--column">
@@ -81,7 +85,7 @@ const Footer = () => {
                                     href="mailto:nRange@nrange.com?subject=To nRange&body"
                                 >Contact Us</a>
                             </li>
-                            <li className="footer--extra--desc">Blog</li>
+                            <li style={{visibility:"hidden"}} className="footer--extra--desc">Blog</li>
                         </ul>
                     </div>
                 </div>

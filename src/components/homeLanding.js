@@ -13,9 +13,6 @@ const HomeLanding = () => {
                 <span className="landing--text-wrapper--title">
                     Smartphone golf gps
                 </span>
-                <span className="landing--text-wrapper--desc">
-                    Schemas through web-enabled communities. Continually whiteboard emerging meta-services whereas.
-                </span>
                 <div className="landing--text-wrapper--stores">
                     <a href="http://itunes.apple.com/us/app/nrange-golf-gps/id366108491?mt=8" target="_blank">
                         <img src="/assets/app-store.svg" alt="app-store" />
