@@ -39,7 +39,7 @@ const Footer = () => {
                                     icon={faFacebookF}
                                     size="lg" />
                             </a>
-                            <a className="black">
+                            <a className="black" href="bla">
                                 <FontAwesomeIcon className="fontawe" icon={faTwitter} size="lg" />
                             </a>
                             <a className="black" href="https://instagram.com/nrangegolfgps" target="blank">
@@ -70,7 +70,7 @@ const Footer = () => {
                             <li className="footer--extra--desc">
                                 <a
                                     className="black"
-                                    href="mailto:nRange@nrange.com?subject=To nRange&body"
+                                    href="mailto:info@infinite.mn ?subject=to infinite&body"
                                 >Contact Us</a>
                             </li>
                             <li style={{visibility:"hidden"}} className="footer--extra--desc">Blog</li>
