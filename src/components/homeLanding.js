@@ -14,10 +14,10 @@ const HomeLanding = () => {
                     Smartphone golf gps
                 </span>
                 <div className="landing--text-wrapper--stores">
-                    <a href="http://itunes.apple.com/us/app/nrange-golf-gps/id366108491?mt=8" target="_blank">
+                    <a href="http://itunes.apple.com/us/app/nrange-golf-gps/id366108491?mt=8" target="blank">
                         <img src="/assets/app-store.svg" alt="app-store" />
                     </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.nrangegolfgps" target="_blank">
+                    <a href="https://play.google.com/store/apps/details?id=com.nrangegolfgps" target="blank">
                         <img src="/assets/google-play.svg" alt="google-play" />
                     </a>
                 </div>
