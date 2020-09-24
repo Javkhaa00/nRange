@@ -1,6 +1,7 @@
 import React from 'react';
 import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -79,10 +80,15 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer--all-rights">
-                <span className="footer--all-rights--desc">
-                    Copyright © 2008-2020 nRange Golf GPS Developed by Infinite Solutions, LLC
-                    nRange and nRange Golf GPS are trademarks or registered trademarks of, LLC in the United States and other countries. <a className="footer--all-rights--terms">Terms of Service</a>
-                </span>
+                <div className="footer--all-rights--wrapper">
+                    <span className="footer--all-rights--wrapper--desc">
+                        Copyright © 2008-2020 nRange Golf GPS Developed by Infinite Solutions, LLC
+                        nRange and nRange Golf GPS are trademarks or registered trademarks of, LLC in the United States and other countries.
+                        <Link to="/terms" className="footer--all-rights--terms" >
+                            Terms of Service
+                        </Link>
+                    </span>
+                </div>
                 <div className="footer--all-rights--logos">
                     <a href="http://itunes.apple.com/us/app/nrange-golf-gps/id366108491?mt=8" target="blank">
                         <img src="/assets/app-store.svg" alt="app-store" />
