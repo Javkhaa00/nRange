@@ -172,6 +172,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &--terms {
+      display: block;
+    }
     &--desc {
       height: 100%;
       display: flex;

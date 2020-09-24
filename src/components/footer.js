@@ -73,7 +73,7 @@ const Footer = () => {
                                     href="mailto:info@infinite.mn ?subject=to infinite&body"
                                 >Contact Us</a>
                             </li>
-                            <li style={{visibility:"hidden"}} className="footer--extra--desc">Blog</li>
+                            <li style={{ visibility: "hidden" }} className="footer--extra--desc">Blog</li>
                         </ul>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ const Footer = () => {
             <div className="footer--all-rights">
                 <span className="footer--all-rights--desc">
                     Copyright © 2008-2020 nRange Golf GPS Developed by Infinite Solutions, LLC
-                    nRange and nRange Golf GPS are trademarks or registered trademarks of, LLC in the United States and other countries. Terms of Service
+                    nRange and nRange Golf GPS are trademarks or registered trademarks of, LLC in the United States and other countries. <a className="footer--all-rights--terms">Terms of Service</a>
                 </span>
                 <div className="footer--all-rights--logos">
                     <a href="http://itunes.apple.com/us/app/nrange-golf-gps/id366108491?mt=8" target="blank">
