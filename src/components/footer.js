@@ -75,7 +75,12 @@ const Footer = () => {
                             <li className="footer--extra--desc">
                                 <a className="black" href="https://infinite.mn/#/" target="_blank">Company</a>
                             </li>
-                            <li className="footer--extra--desc">Careers</li>
+                            <li className="footer--extra--desc">
+                                <a
+                                    className="black"
+                                    href="mailto:nRange@nrange.com?subject=To nRange&body"
+                                >Contact Us</a>
+                            </li>
                             <li className="footer--extra--desc">Blog</li>
                         </ul>
                     </div>

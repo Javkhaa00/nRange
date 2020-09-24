@@ -5,13 +5,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &--email {
+  &--wrapper {
     width: 60%;
-    font-size: 14px;
-    font-family: "OpenSans", sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: 400;
-    line-height: 1.429;
-    z-index: 17;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    &--envelope {
+      color: white;
+    }
+    &--email {
+      width: 60%;
+      font-size: 14px;
+      font-family: "OpenSans", sans-serif;
+      color: rgb(255, 255, 255);
+      font-weight: 400;
+      line-height: 1.429;
+      z-index: 1.6;
+      text-decoration: none;
+    }
+    &--email:hover {
+      opacity: 0.75;
+    }
   }
 }

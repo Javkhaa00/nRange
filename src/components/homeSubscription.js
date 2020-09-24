@@ -13,7 +13,7 @@ const HomeSubscription = () => {
                     <span className="subs--wrapper--side--title">Free</span>
                     <span className="subs--wrapper--side--desc">(free 3 courses)</span>
                     <span className="subs--wrapper--side--amount">$0.00</span>
-                    <div className="subs--wrapper--side--subscribe">Subscribe</div>
+                    <div style={{visibility: "hidden"}} className="subs--wrapper--side--subscribe">Subscribe</div>
                 </template>
                 <template className="subs--wrapper--main">
                     <span className="subs--wrapper--main--popular">Most popular</span>
