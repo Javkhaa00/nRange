@@ -37,7 +37,7 @@ export const Header = () => {
                             to="/"
                             onClick={() => {
                                 window.scrollTo({
-                                    top: 930,
+                                    top: 890,
                                     behavior: 'smooth'
                                 });
                             }}
