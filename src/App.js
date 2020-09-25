@@ -28,7 +28,7 @@ function App() {
         <Route path="/courses" exact={true} component={Courses} >
           <Courses />
         </Route>
-        <Route path="/terms" exact={true} component={Terms} >
+        <Route path="/terms" exact={true} >
           <Terms />
         </Route>
       </Switch>
