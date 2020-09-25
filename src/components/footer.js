@@ -13,7 +13,7 @@ const Footer = () => {
             </div>
             <div className="footer--download">
                 <div className="footer--download--logo">
-                    <img onClick={() => { window.location = "/"; }} src="/assets/nrange-logo-footer.png" alt="footer-nrange-logo" />
+                    <img style={{ cursor: "pointer" }} onClick={() => { window.location = "/"; }} src="/assets/nrange-logo-footer.png" alt="footer-nrange-logo" />
                 </div>
                 <span className="footer--download--title">Download now for free</span>
                 <span className="footer--download--desc">Join the 1million+ golfers today</span>
@@ -30,7 +30,7 @@ const Footer = () => {
                 <div className="footer--extra--wrapper">
                     <div className="footer--extra--wrapper--logos">
                         <div className="footer--extra--wrapper--logos--nrange">
-                            <img onClick={() => { window.location = "/"; }} src="/assets/nRange-logo-black.png" alt="footer-logo" />
+                            <img style={{cursor: "pointer"}} onClick={() => { window.location = "/"; }} src="/assets/nRange-logo-black.png" alt="footer-logo" />
                         </div>
                         <div className="footer--extra--wrapper--logos--social">
                             <a className="black" href="https://www.facebook.com/nrangegolfgps" target="blank">
