@@ -13,6 +13,7 @@ export const Header = () => {
                         onClick={() => {
                             window.location = "/";
                         }}
+                        style={{ cursor: "pointer" }}
                         src="/assets/nRange-logo.png"
                         alt="header-logo"
                     />
