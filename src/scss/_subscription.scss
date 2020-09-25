@@ -79,6 +79,17 @@
         font-size: 32px;
         font-family: "Bebas Neue";
         color: rgb(255, 255, 255);
+        border-width: 2px;
+        border-color: rgb(120, 188, 65);
+        border-style: solid;
+      }
+      &--subscribe:hover {
+        background-color: white;
+        color: rgb(120, 188, 65);
+        transition: 0.2s;
+        border-width: 2px;
+        border-color: rgba(0, 0, 0, 0.102);
+        border-style: solid;
       }
     }
     &--side {
@@ -122,6 +133,14 @@
         border-radius: 20px;
         width: 156px;
         height: 40px;
+        transition: 0.2s;
+      }
+      &--subscribe:hover {
+        background-color: rgb(120, 188, 65);
+        color: white;
+        border-width: 2px;
+        border-color: rgba(120, 188, 65, 0.102);
+        border-style: solid;
       }
     }
     &--side:hover {
