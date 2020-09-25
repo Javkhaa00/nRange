@@ -84,9 +84,9 @@ const Footer = () => {
                     <span className="footer--all-rights--wrapper--desc">
                         Copyright © 2008-2020 nRange Golf GPS Developed by Infinite Solutions, LLC
                         nRange and nRange Golf GPS are trademarks or registered trademarks of, LLC in the United States and other countries.
-                        <Link to="/terms" className="footer--all-rights--terms" >
+                        <a href="/terms" className="footer--all-rights--terms" >
                             Terms of Service
-                        </Link>
+                        </a>
                     </span>
                 </div>
                 <div className="footer--all-rights--logos">
