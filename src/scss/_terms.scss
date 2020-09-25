@@ -1,27 +1,21 @@
 .terms {
-  height: 100vh;
+  font-family: "OpenSans", sans-serif;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   &--title {
+    padding-top: 1%;
     font-size: 36px;
     font-family: "OpenSans", sans-serif;
   }
   &--wrapper {
+    padding-bottom: 10%;
     height: 100%;
     width: 60%;
     display: flex;
     flex-direction: column;
-    // background: rgb(10, 205, 132);
-    // background: linear-gradient(
-    //   90deg,
-    //   top to bottom
-    //   rgba(10, 205, 132, 1) 0%,
-    //   rgba(94, 215, 170, 1) 49%,
-    //   rgba(236, 236, 236, 1) 100%
-    // );
     &--title {
       font-size: 24px;
       font-family: "OpenSans", sans-serif;
@@ -31,5 +25,23 @@
       font-family: "OpenSans", sans-serif;
       color: #ff6209;
     }
+  }
+  ul li {
+    list-style-type: disc;
+    font-size: 16px;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+  }
+  .list-title {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "OpenSans", sans-serif;
+  }
+  .list-title-under {
+    padding-bottom: 4px;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "OpenSans", sans-serif;
   }
 }
