@@ -3,9 +3,7 @@ import React from "react";
 const CourseLanding = () => {
     return (
         <div className="course-landing">
-            <div className="course-landing--background">
-                <img src="/assets/background.png" alt="background" />
-            </div>
+            <div className="course-landing--background" />
             <span className="course-landing--title"></span>
             <div className="course-landing--pseudo">
                 <span className="course-landing--courses">Courses</span>
