@@ -1,5 +1,6 @@
 import React from 'react';
 import CourseLanding from '../components/courseLanding';
+import CourseList from '../components/courseList';
 import CourseSearch from '../components/courseSearch';
 
 const Courses = () => {
@@ -7,6 +8,7 @@ const Courses = () => {
         <>
             <CourseLanding />
             <CourseSearch />
+            <CourseList />
         </>
     )
 }
