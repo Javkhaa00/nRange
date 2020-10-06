@@ -58,3 +58,11 @@
     }
   }
 }
+
+@include respond-between(lg, xlg) {
+  .course-search {
+    &--wrapper {
+      width: 75%;
+    }
+  }
+}

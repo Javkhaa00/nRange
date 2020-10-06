@@ -230,3 +230,22 @@
     }
   }
 }
+
+@include respond-between(lg, xlg) {
+  .footer {
+    &--extra {
+      &--wrapper {
+        width: 75%;
+      }
+    }
+    &--all-rights {
+      width: 75%;
+      &--wrapper {
+        width: 60%;
+      }
+      &--logos {
+        width: 40%;
+      }
+    }
+  }
+}

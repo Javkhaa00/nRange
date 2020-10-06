@@ -98,3 +98,30 @@
     }
   }
 }
+
+@include respond-between(lg, xlg) {
+  .landing {
+    &--text-wrapper {
+      width: 35%;
+      &--welcome {
+        font-size: 22px;
+      }
+      &--title {
+        font-size: 74px;
+      }
+    }
+    &--phones {
+      width: 35%;
+      img {
+        height: 580px;
+      }
+      &--iphone {
+        position: absolute;
+        top: 15%;
+      }
+      &--samsung {
+        top: 25%;
+      }
+    }
+  }
+}

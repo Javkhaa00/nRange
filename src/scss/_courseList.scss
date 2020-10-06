@@ -67,3 +67,13 @@
     }
   }
 }
+
+@include respond-between(lg, xlg) {
+  .course-list {
+    &--lists {
+      &--wrapper {
+        width: 75%;
+      }
+    }
+  }
+}

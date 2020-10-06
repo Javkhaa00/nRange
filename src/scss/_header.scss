@@ -94,3 +94,14 @@
     }
   }
 }
+
+@include respond-between(lg, xlg) {
+  .header {
+    &--nav {
+      width: 75%;
+    }
+    li {
+      padding-left: 36px;
+    }
+  }
+}

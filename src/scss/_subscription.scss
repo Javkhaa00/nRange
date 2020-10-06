@@ -157,3 +157,11 @@
     }
   }
 }
+
+@include respond-between(lg, xlg) {
+  .subs {
+    &--wrapper {
+      width: 75%;
+    }
+  }
+}

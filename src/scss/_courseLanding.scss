@@ -64,3 +64,16 @@
     color: rgb(255, 255, 255);
   }
 }
+
+@include respond-between(lg, xlg) {
+  .course-landing {
+    background-size: 75rem;
+    background-position-y: 15rem;
+    &--title {
+      padding-top: 4%;
+    }
+    &--background {
+      left: -10%;
+    }
+  }
+}
