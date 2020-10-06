@@ -149,3 +149,11 @@
     }
   }
 }
+
+@include respond-between(xlg, xxlg) {
+  .subs {
+    &--wrapper {
+      width: 70%;
+    }
+  }
+}

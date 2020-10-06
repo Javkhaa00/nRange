@@ -71,3 +71,30 @@
     }
   }
 }
+
+@include respond-between(xlg, xxlg) {
+  .landing {
+    &--text-wrapper {
+      width: 35%;
+      &--welcome {
+        font-size: 24px;
+      }
+      &--title {
+        font-size: 86px;
+      }
+    }
+    &--phones {
+      width: 35%;
+      img {
+        height: 580px;
+      }
+      &--iphone {
+        position: absolute;
+        top: 12%;
+      }
+      &--samsung {
+        top: 22%;
+      }
+    }
+  }
+}

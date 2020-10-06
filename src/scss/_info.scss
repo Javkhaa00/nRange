@@ -28,3 +28,11 @@
     }
   }
 }
+
+@include respond-between(xlg, xxlg) {
+  .info {
+    &--wrapper {
+      width: 70%;
+    }
+  }
+}

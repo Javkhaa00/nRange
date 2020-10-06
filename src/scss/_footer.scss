@@ -211,3 +211,22 @@
     list-style: none;
   }
 }
+
+@include respond-between(xlg, xxlg) {
+  .footer {
+    &--extra {
+      &--wrapper {
+        width: 70%;
+      }
+    }
+    &--all-rights {
+      width: 70%;
+      &--wrapper {
+        width: 60%;
+      }
+      &--logos {
+        width: 40%;
+      }
+    }
+  }
+}

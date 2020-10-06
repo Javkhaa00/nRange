@@ -41,58 +41,6 @@
       }
     }
   }
-  &--lists {
-    width: 100%;
-    height: 85%;
-    display: flex;
-    justify-content: center;
-    border-top: 1px solid rgb(229, 229, 229);
-    &--wrapper {
-      width: 60%;
-      height: 100%;
-      display: flex;
-      flex-direction: row;
-      &--title {
-        width: 100%;
-        height: 5%;
-        font-size: 32px;
-        font-family: "Bebas Neue";
-        color: rgb(0, 0, 0);
-        line-height: 1.235;
-        text-align: left;
-        padding-top: 24px;
-        padding-bottom: 24px;
-      }
-      &--browse {
-        height: 100%;
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding-right: 20%;
-        &--texts {
-          height: 75%;
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-        }
-      }
-      &--international {
-        height: 100%;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        &--texts {
-          height: 72%;
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-        }
-      }
-    }
-  }
 }
 
 .lists {
@@ -101,4 +49,12 @@
   color: rgb(0, 0, 0);
   line-height: 1.855;
   text-align: left;
+}
+
+@include respond-between(xlg, xxlg) {
+  .course-search {
+    &--wrapper {
+      width: 70%;
+    }
+  }
 }

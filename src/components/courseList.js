@@ -9,22 +9,22 @@ const CourseList = () => {
     return <span className="lists">{el.name}</span>;
   };
   return (
-    <div className="courselist">
-      <div className="courselist--lists">
-        <div className="courselist--lists--wrapper">
-          <div className="courselist--lists--wrapper--browse">
-            <span className="courselist--lists--wrapper--title">
+    <div className="course-list">
+      <div className="course-list--lists">
+        <div className="course-list--lists--wrapper">
+          <div className="course-list--lists--wrapper--browse">
+            <span className="course-list--lists--wrapper--title">
               Browse course by us State:
             </span>
-            <div className="courselist--lists--wrapper--browse--texts">
+            <div className="course-list--lists--wrapper--browse--texts">
               {browseCourse.map(renderList)}
             </div>
           </div>
-          <div className="courselist--lists--wrapper--international">
-            <span className="courselist--lists--wrapper--title">
+          <div className="course-list--lists--wrapper--international">
+            <span className="course-list--lists--wrapper--title">
               International Golf Courses:
             </span>
-            <div className="courselist--lists--wrapper--international--texts">
+            <div className="course-list--lists--wrapper--international--texts">
               {courseList.map(renderList)}
             </div>
           </div>
