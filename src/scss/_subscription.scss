@@ -165,3 +165,11 @@
     }
   }
 }
+
+@include respond-between(md, lg) {
+  .subs {
+    &--wrapper {
+      width: 85%;
+    }
+  }
+}

@@ -77,3 +77,16 @@
     }
   }
 }
+
+@include respond-between(md, lg) {
+  .course-landing {
+    background-size: 60rem;
+    background-position-y: 18rem;
+    &--title {
+      padding-top: 7%;
+    }
+    &--background {
+      left: -10%;
+    }
+  }
+}

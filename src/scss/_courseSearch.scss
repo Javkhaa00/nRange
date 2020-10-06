@@ -66,3 +66,11 @@
     }
   }
 }
+
+@include respond-between(md, lg) {
+  .course-search {
+    &--wrapper {
+      width: 85%;
+    }
+  }
+}

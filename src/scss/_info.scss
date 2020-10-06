@@ -44,3 +44,11 @@
     }
   }
 }
+
+@include respond-between(md, lg) {
+  .info {
+    &--wrapper {
+      width: 85%;
+    }
+  }
+}

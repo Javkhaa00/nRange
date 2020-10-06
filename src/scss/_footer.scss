@@ -249,3 +249,22 @@
     }
   }
 }
+
+@include respond-between(md, lg) {
+  .footer {
+    &--extra {
+      &--wrapper {
+        width: 85%;
+      }
+    }
+    &--all-rights {
+      width: 85%;
+      &--wrapper {
+        width: 60%;
+      }
+      &--logos {
+        width: 40%;
+      }
+    }
+  }
+}
