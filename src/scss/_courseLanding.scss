@@ -90,3 +90,31 @@
     }
   }
 }
+
+@include respond-between(sm, lg) {
+  .course-landing {
+    background-size: 45rem;
+    background-position-y: 20rem;
+    &--title {
+      padding-top: 10%;
+    }
+    &--background {
+      left: -30%;
+      background-size: cover;
+    }
+  }
+}
+
+@include respond-between(xs, sm) {
+  .course-landing {
+    background-size: 35rem;
+    background-position-y: 23rem;
+    &--title {
+      padding-top: 25%;
+    }
+    &--background {
+      background-size: 60rem;
+      left: -40%;
+    }
+  }
+}

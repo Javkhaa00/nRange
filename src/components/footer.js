@@ -166,12 +166,14 @@ const Footer = () => {
         </div>
         <div className="footer--all-rights--logos">
           <a
+          className="footer--all-rights--logos--1"
             href="http://itunes.apple.com/us/app/nrange-golf-gps/id366108491?mt=8"
             target="blank"
           >
             <img src="/assets/app-store.svg" alt="app-store" />
           </a>
           <a
+            className="footer--all-rights--logos--2"
             href="https://play.google.com/store/apps/details?id=com.nrangegolfgps"
             target="blank"
           >

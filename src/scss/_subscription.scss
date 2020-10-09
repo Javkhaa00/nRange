@@ -173,3 +173,11 @@
     }
   }
 }
+
+@include respond-between(sm, md) {
+  .subs {
+    &--wrapper {
+      width: 85%;
+    }
+  }
+}

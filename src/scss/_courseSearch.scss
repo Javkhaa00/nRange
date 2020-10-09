@@ -74,3 +74,26 @@
     }
   }
 }
+
+@include respond-between(sm, md) {
+  .course-search {
+    &--wrapper {
+      width: 85%;
+    }
+  }
+}
+
+@include respond-between(xs, sm) {
+  .course-search {
+    &--wrapper {
+      width: 95%;
+      &--header {
+        &--box {
+          &--title {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+}

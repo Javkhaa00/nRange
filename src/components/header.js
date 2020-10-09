@@ -57,6 +57,7 @@ export const Header = () => {
             </Link>
           </li>
         </ul>
+        <div className="header--nav--burger"></div>
       </nav>
     </div>
   );

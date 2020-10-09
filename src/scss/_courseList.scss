@@ -87,3 +87,46 @@
     }
   }
 }
+
+@include respond-between(sm, md) {
+  .course-list {
+    &--lists {
+      &--wrapper {
+        width: 85%;
+        &--browse {
+          width: 40%;
+          padding-right: 10%;
+        }
+      }
+    }
+  }
+}
+
+@include respond-between(xs, sm) {
+  .course-list {
+    height: 100vh;
+    &--lists {
+      &--wrapper {
+        width: 95%;
+        &--title {
+          font-size: 28px;
+        }
+        &--browse {
+          width: 40%;
+          padding-right: 10%;
+          &--texts {
+            height: 80%;
+          }
+        }
+        &--international {
+          &--texts {
+            height: 80%;
+          }
+        }
+      }
+    }
+  }
+  .lists {
+    font-size: 12px;
+  }
+}

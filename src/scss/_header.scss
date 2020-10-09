@@ -116,3 +116,41 @@
     }
   }
 }
+
+@include respond-between(sm, md) {
+  .header {
+    &--nav {
+      width: 85%;
+      &--logo {
+        img {
+          height: 2.5rem;
+          padding-right: 8px;
+        }
+      }
+    }
+    li {
+      padding-left: 0px;
+    }
+  }
+}
+
+@include respond-between(xs, sm) {
+  .header {
+    &--nav {
+      width: 100%;
+      padding: 16px 0px 16px 0px;
+      &--logo {
+        padding-left: 5%;
+        img {
+          height: 2.5rem;
+        }
+      }
+      &--input {
+        display: none;
+      }
+    }
+    ul {
+      display: none;
+    }
+  }
+}

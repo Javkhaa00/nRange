@@ -52,3 +52,20 @@
     }
   }
 }
+
+@include respond-between(sm, md) {
+  .info {
+    &--wrapper {
+      width: 85%;
+    }
+  }
+}
+
+@include respond-between(xs, sm) {
+  .info {
+    &--wrapper {
+      width: 100%;
+      padding-left: 5%;
+    }
+  }
+}

@@ -13,4 +13,4 @@ const CourseLanding = () => {
     );
 };
 
-export default CourseLanding;
+export default CourseLanding;   
