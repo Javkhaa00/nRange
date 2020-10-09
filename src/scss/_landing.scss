@@ -234,3 +234,45 @@
     }
   }
 }
+
+@include respond-between(xxs, xs) {
+  .landing {
+    flex-direction: column;
+    &--text-wrapper {
+      width: 100%;
+      align-items: center;
+      height: 40%;
+      &--welcome {
+        padding-top: 12px;
+        font-size: 23px;
+        text-align: center;
+      }
+      &--title {
+        font-size: 72px;
+        width: 80%;
+        text-align: center;
+      }
+      &--stores {
+        img {
+          padding-top: 0;
+        }
+      }
+    }
+    &--phones {
+      width: 100%;
+      height: 50%;
+      justify-content: center;
+      img {
+        height: 420px;
+      }
+      &--iphone {
+        position: unset;
+        margin-left: 5%;
+      }
+      &--samsung {
+        position: unset;
+        padding-top: 5%;
+      }
+    }
+  }
+}

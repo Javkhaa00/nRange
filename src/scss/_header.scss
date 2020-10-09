@@ -154,3 +154,24 @@
     }
   }
 }
+
+@include respond-between(xxs, xs) {
+  .header {
+    &--nav {
+      width: 100%;
+      padding: 16px 0px 16px 0px;
+      &--logo {
+        padding-left: 5%;
+        img {
+          height: 2.5rem;
+        }
+      }
+      &--input {
+        display: none;
+      }
+    }
+    ul {
+      display: none;
+    }
+  }
+}

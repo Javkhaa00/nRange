@@ -69,3 +69,12 @@
     }
   }
 }
+
+@include respond-between(xxs, xs) {
+  .info {
+    &--wrapper {
+      width: 100%;
+      padding-left: 5%;
+    }
+  }
+}
