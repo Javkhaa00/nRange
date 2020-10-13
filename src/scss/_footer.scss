@@ -367,3 +367,51 @@
     }
   }
 }
+
+@include respond-between(xxs, xs) {
+  .footer {
+    height: 110vh;
+    &--sub {
+      height: 15%;
+      &--hand-phone {
+        img {
+          height: 280px;
+        }
+      }
+    }
+    &--extra {
+      height: 25%;
+      &--title {
+        font-size: 22px;
+      }
+      &--wrapper {
+        width: 95%;
+        &--column {
+          width: 100%;
+        }
+      }
+    }
+    &--all-rights {
+      width: 95%;
+      height: 10%;
+      &--wrapper {
+        width: 75%;
+      }
+      &--logos {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        &--1 {
+          padding-left: 12px;
+          padding-bottom: 4px;
+        }
+        &--2 {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}

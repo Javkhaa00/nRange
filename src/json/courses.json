@@ -1,236 +1,314 @@
 [
   {
-    "name": "Australia"
+    "name": "Australia",
+    "state": "Australia" 
   },
   {
-    "name": "Austria"
+    "name": "Austria",
+    "state": "Austria" 
   },
   {
-    "name": "Barbados"
+    "name": "Barbados",
+    "state": "Barbados" 
   },
   {
-    "name": "Belgium"
+    "name": "Belgium",
+    "state": "Belgium" 
   },
   {
-    "name": "Bermuda"
+    "name": "Bermuda",
+    "state": "Bermuda" 
   },
   {
-    "name": "Brasil"
+    "name": "Brasil",
+    "state": "Brasil" 
   },
   {
-    "name": "Canada"
+    "name": "Canada",
+    "state": "CANADA" 
   },
   {
-    "name": "Chile"
+    "name": "Chile",
+    "state": "Chile" 
   },
   {
-    "name": "Danmark"
+    "name": "Danmark",
+    "state": "Denmark" 
   },
   {
-    "name": "Dominican Republic"
+    "name": "Dominican Republic",
+    "state": "Dominican Republic" 
   },
   {
-    "name": "Germany"
+    "name": "Germany",
+    "state": "Germany" 
   },
   {
-    "name": "Ireland"
+    "name": "Malaysia",
+    "state": "Malaysia" 
   },
   {
-    "name": "Malaysia"
+    "name": "Mexico",
+    "state": "Mexico" 
   },
   {
-    "name": "Mexico"
+    "name": "Netherlands",
+    "state": "Netherlands" 
   },
   {
-    "name": "Netherlands"
+    "name": "Portugal",
+    "state": "Portugal" 
   },
   {
-    "name": "Portugal"
+    "name": "Qatar",
+    "state": "Qatar" 
   },
   {
-    "name": "Qatar"
+    "name": "Singapore",
+    "state": "Singapore" 
   },
   {
-    "name": "Singapore"
+    "name": "South Africa",
+    "state": "South Africa" 
   },
   {
-    "name": "South Africa"
+    "name": "Sweden",
+    "state": "Sweden" 
   },
   {
-    "name": "Sweden"
+    "name": "Switzerland",
+    "state": "Switzerland" 
   },
   {
-    "name": "Switzerland"
+    "name": "United Kingdom",
+    "state": "UK" 
   },
   {
-    "name": "United Kingdom"
+    "name": "Argentina",
+    "state": "Argentina" 
   },
   {
-    "name": "Argentina"
+    "name": "Aruba",
+    "state": "Aruba" 
   },
   {
-    "name": "Aruba"
+    "name": "Bahrain",
+    "state": "Bahrain" 
   },
   {
-    "name": "Bahrain"
+    "name": "Bangladesh",
+    "state": "Bangladesh" 
   },
   {
-    "name": "Bangladesh"
+    "name": "Bolivia",
+    "state": "Bolivia" 
   },
   {
-    "name": "Bolivia"
+    "name": "Botswana",
+    "state": "Botswana" 
   },
   {
-    "name": "Botswana"
+    "name": "China",
+    "state": "China" 
   },
   {
-    "name": "China"
+    "name": "Columbia",
+    "state": "Columbia" 
   },
   {
-    "name": "Columbia"
+    "name": "Costa Rica",
+    "state": "Costa Rica" 
   },
   {
-    "name": "Costa Rica"
+    "name": "Cyprus",
+    "state": "Cyprus" 
   },
   {
-    "name": "Cyprus"
+    "name": "Czech Republic",
+    "state": "Czech Republic" 
   },
   {
-    "name": "Czech Republic"
+    "name": "Egypt",
+    "state": "Egypt" 
   },
   {
-    "name": "Egypt"
+    "name": "El Salvador",
+    "state": "El Salvador" 
   },
   {
-    "name": "El Salvador"
+    "name": "France",
+    "state": "France" 
   },
   {
-    "name": "France"
+    "name": "Greece",
+    "state": "Greece" 
   },
   {
-    "name": "Greece"
+    "name": "Guateemala",
+    "state": "Guateemala" 
   },
   {
-    "name": "Guatermala"
+    "name": "Hong Kong",
+    "state": "Hong Kong" 
   },
   {
-    "name": "Hong Kong"
+    "name": "India",
+    "state": "India" 
   },
   {
-    "name": "India"
+    "name": "Indonesia",
+    "state": "Indonesia" 
   },
   {
-    "name": "Indonesia"
+    "name": "Ireland",
+    "state": "Ireland" 
   },
   {
-    "name": "Israel"
+    "name": "Israel",
+    "state": "Isreal" 
   },
   {
-    "name": "Italy"
+    "name": "Italy",
+    "state": "Italy" 
   },
   {
-    "name": "Jamaica"
+    "name": "Jamaica",
+    "state": "Jamaica" 
   },
   {
-    "name": "Japan"
+    "name": "Japan",
+    "state": "Japan" 
   },
   {
-    "name": "Kenya"
+    "name": "Kenya",
+    "state": "Kenya" 
   },
   {
-    "name": "Kuwait"
+    "name": "Kuwait",
+    "state": "Kuwait" 
   },
   {
-    "name": "Luxembourg"
+    "name": "Luxembourg",
+    "state": "Luxembourg" 
   },
   {
-    "name": "Mauritius"
+    "name": "Mauritius",
+    "state": "Mauritius" 
   },
   {
-    "name": "Namibia"
+    "name": "Namibia",
+    "state": "Namibia" 
   },
   {
-    "name": "New Zealand"
+    "name": "New Zealand",
+    "state": "New Zealand" 
   },
   {
-    "name": "Nicaragua"
+    "name": "Nicaragua",
+    "state": "Nicaragua" 
   },
   {
-    "name": "Nigeria"
+    "name": "Nigeria",
+    "state": "Nigeria" 
   },
   {
-    "name": "Norway"
+    "name": "Norway",
+    "state": "Norway" 
   },
   {
-    "name": "Oman"
+    "name": "Oman",
+    "state": "Oman" 
   },
   {
-    "name": "Pakistan"
+    "name": "Pakistan",
+    "state": "Pakistan" 
   },
   {
-    "name": "Panama"
+    "name": "Panama",
+    "state": "Panama" 
   },
   {
-    "name": "Paraguay"
+    "name": "Paraguay",
+    "state": "Paraguay" 
   },
   {
-    "name": "Peru"
+    "name": "Peru",
+    "state": "Peru" 
   },
   {
-    "name": "Philippines"
+    "name": "Philippines",
+    "state": "Philippines" 
   },
   {
-    "name": "Poland"
+    "name": "Poland",
+    "state": "Poland" 
   },
   {
-    "name": "Puerto Rico"
+    "name": "Puerto Rico",
+    "state": "Puerto Rico" 
   },
   {
-    "name": "Saint Kitts and Nevi"
+    "name": "Saint Kitts and Nevi",
+    "state": "" 
   },
   {
-    "name": "Saudi Arabia"
+    "name": "Saudi Arabia",
+    "state": "Saint Kitts and Nevi" 
   },
   {
-    "name": "Slovokia"
+    "name": "Slovokia",
+    "state": "Slovokia" 
   },
   {
-    "name": "Spain"
+    "name": "Spain",
+    "state": "Spain" 
   },
   {
-    "name": "Swaziland"
+    "name": "Swaziland",
+    "state": "Swaziland" 
   },
   {
-    "name": "Taiwan"
+    "name": "Taiwan",
+    "state": "Taiwan" 
   },
   {
-    "name": "Thailand"
+    "name": "Thailand",
+    "state": "Thailand" 
   },
   {
-    "name": "Trinidad and Tobago"
+    "name": "Trinidad and Tobago",
+    "state": "Trinidad and Tobago" 
   },
   {
-    "name": "Turkey"
+    "name": "Turkey",
+    "state": "Turkey" 
   },
   {
-    "name": "Uganda"
+    "name": "Uganda",
+    "state": "Uganda" 
   },
   {
-    "name": "United Arab Emirates"
+    "name": "United Arab Emirates",
+    "state": "United Arab Emirates" 
   },
   {
-    "name": "Uruguay"
+    "name": "Uruguay",
+    "state": "Uruguay" 
   },
   {
-    "name": "Venezuela"
+    "name": "Venezuela",
+    "state": "Venezuela" 
   },
   {
-    "name": "Vietnam"
+    "name": "Vietnam",
+    "state": "Vietnam" 
   },
   {
-    "name": "Zambia"
+    "name": "Zambia",
+    "state": "Zambia" 
   },
   {
-    "name": "Zimbabwe"
+    "name": "Zimbabwe",
+    "state": "Zimbabwe" 
   }
 ]

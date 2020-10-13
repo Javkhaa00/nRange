@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
+  
   const url = "http://localhost:8000/courses/1995";
   // Simple GET request using fetch
   fetch(url)

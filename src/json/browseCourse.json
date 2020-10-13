@@ -1,161 +1,214 @@
 [
   {
-    "name": "Alabama"
+    "name": "Alabama",
+    "state": "AL"
   },
   {
-    "name": "Alaska"
+    "name": "Alaska",
+    "state": "AK"
   },
   {
-    "name": "Arizona"
+    "name": "Arizona",
+    "state": "AZ"
   },
   {
-    "name": "Arkansas"
+    "name": "Arkansas",
+    "state": "AR"
   },
   {
-    "name": "California"
+    "name": "California",
+    "state": "CA"
   },
   {
-    "name": "Colorado"
+    "name": "Colorado",
+    "state": "CO"
   },
   {
-    "name": "Connecticut"
+    "name": "Connecticut",
+    "state": "CT"
   },
   {
-    "name": "Delaware"
+    "name": "Delaware",
+    "state": "DE"
   },
   {
-    "name": "District of Columbia"
+    "name": "District of Columbia",
+    "state": "DC"
   },
   {
-    "name": "Florida"
+    "name": "Florida",
+    "state": "FL"
   },
   {
-    "name": "Georgia"
+    "name": "Georgia",
+    "state": "GA"
   },
   {
-    "name": "Hawaii"
+    "name": "Hawaii",
+    "state": "HI"
   },
   {
-    "name": "Idaho"
+    "name": "Idaho",
+    "state": "ID"
   },
   {
-    "name": "Illinois"
+    "name": "Illinois",
+    "state": "IL"
   },
   {
-    "name": "Indiana"
+    "name": "Indiana",
+    "state": "IN"
   },
   {
-    "name": "Iowa"
+    "name": "Iowa",
+    "state": "IA"
   },
   {
-    "name": "Kansas"
+    "name": "Kansas",
+    "state": "KS"
   },
   {
-    "name": "Kentucky"
+    "name": "Kentucky",
+    "state": "KY"
   },
   {
-    "name": "Louisiana"
+    "name": "Louisiana",
+    "state": "LA"
   },
   {
-    "name": "Maine"
+    "name": "Maine",
+    "state": "ME"
   },
   {
-    "name": "Maryland"
+    "name": "Maryland",
+    "state": "MD"
   },
   {
-    "name": "Massachusetts"
+    "name": "Massachusetts",
+    "state": "MA"
   },
   {
-    "name": "Michigan"
+    "name": "Michigan",
+    "state": "MI"
   },
   {
-    "name": "Minnesota"
+    "name": "Minnesota",
+    "state": "MN"
   },
   {
-    "name": "Mississippi"
+    "name": "Mississippi",
+    "state": "MS"
   },
   {
-    "name": "Missouri"
+    "name": "Missouri",
+    "state": "MO"
   },
   {
-    "name": "Montana"
+    "name": "Montana",
+    "state": "MT"
   },
   {
-    "name": "Nebraska"
+    "name": "Nebraska",
+    "state": "NE"
   },
   {
-    "name": "Nevada"
+    "name": "Nevada",
+    "state": "NV"
   },
   {
-    "name": "New Hampshire"
+    "name": "New Hampshire",
+    "state": "NH"
   },
   {
-    "name": "New Jersey"
+    "name": "New Jersey",
+    "state": "NJ"
   },
   {
-    "name": "New Mexico"
+    "name": "New Mexico",
+    "state": "NM"
   },
   {
-    "name": "New York"
+    "name": "New York",
+    "state": "NY"
   },
   {
-    "name": "North Carolina"
+    "name": "North Carolina",
+    "state": "NC"
   },
   {
-    "name": "North Dakota"
+    "name": "North Dakota",
+    "state": "ND"
   },
   {
-    "name": "Ohio"
+    "name": "Ohio",
+    "state": "OH"
   },
   {
-    "name": "Oklahoma"
+    "name": "Oklahoma",
+    "state": "OK"
   },
   {
-    "name": "Oregon"
+    "name": "Oregon",
+    "state": "OR"
   },
   {
-    "name": "Pennsylvania"
+    "name": "Pennsylvania",
+    "state": "PA"
   },
   {
-    "name": "Puerto Rico"
+    "name": "Puerto Rico",
+    "state": "Puerte Rico"
   },
   {
-    "name": "Rhode Island"
+    "name": "Rhode Island",
+    "state": "RIs"
   },
   {
-    "name": "South Carolina"
+    "name": "South Carolina",
+    "state": "SC"
   },
   {
-    "name": "South Dakota"
+    "name": "South Dakota",
+    "state": "SD"
   },
   {
-    "name": "Tennessee"
+    "name": "Tennessee",
+    "state": "TN"
   },
   {
-    "name": "Texas"
+    "name": "Texas",
+    "state": "TX"
   },
   {
-    "name": "Utah"
+    "name": "Utah",
+    "state": "UT"
   },
   {
-    "name": "Vermont"
+    "name": "Vermont",
+    "state": "VT"
   },
   {
-    "name": "Virginia"
+    "name": "Virginia",
+    "state": "VA"
   },
   {
-    "name": "Washington"
+    "name": "Washington",
+    "state": "WA"
   },
   {
-    "name": "West Virginia"
+    "name": "West Virginia",
+    "state": "WV"
   },
   {
-    "name": "Wisconsin"
+    "name": "Wisconsin",
+    "state": "WI"
   },
   {
-    "name": "Wyoming"
+    "name": "Wyoming",
+    "state": "WY"
   },
   {
-    "name": "Virgin Islands"
+    "name": "Virgin Islands",
+    "state": "VI"
   }
 ]
