@@ -6,6 +6,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Info from './components/info';
 import Terms from './pages/Terms';
+import courseDetails from './components/courseDetails';
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,6 +20,7 @@ function App() {
       <Info />
       <Header />
       <Switch>
+        <Route path="/courses/state/:state" exact={true} component={courseDetails} />
         <Route exact path="/" component={Home}>
           <Home />
         </Route>

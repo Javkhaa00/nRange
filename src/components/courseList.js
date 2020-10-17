@@ -1,3 +1,4 @@
+import Axios from "axios";
 import React from "react";
 import browseCourse from "../json/browseCourse.json";
 import courseList from "../json/courses.json";
@@ -8,6 +9,7 @@ const CourseList = () => {
 
     return <span className="lists">{el.name}</span>;
   };
+
   return (
     <div className="course-list">
       <div className="course-list--lists">
