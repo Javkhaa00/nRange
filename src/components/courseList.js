@@ -7,7 +7,7 @@ const CourseList = () => {
   const renderList = (el) => {
     if (!el) return null;
 
-    return <span className="lists">{el.name}</span>;
+    return <a href="" ><span className="lists">{el.name}</span></a>;
   };
 
   return (

@@ -1,7 +1,7 @@
 body {
-    margin: 0 !important;
-    user-select: none;
-    outline: none;
+  margin: 0 !important;
+  user-select: none;
+  outline: none;
 }
 
 .fontawe {
@@ -10,9 +10,9 @@ body {
   background-color: white;
 }
 .search {
-    color: rgba(255, 255, 255, 0.3);
-    margin-left: -8%;
-    cursor: pointer;
+  color: rgba(255, 255, 255, 0.3);
+  margin-left: -8%;
+  cursor: pointer;
 }
 
 .black {
@@ -22,4 +22,18 @@ body {
 
 .black:hover {
   opacity: 0.75;
+}
+
+a {
+  font-size: 14px;
+  padding: 2px;
+  font-family: "Open Sans", sans-serif;
+  color: #050a16;
+  line-height: 1.429;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
 }

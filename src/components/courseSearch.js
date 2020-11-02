@@ -10,10 +10,13 @@ const CourseSearch = () => {
       new_a.push({
         value: per.name,
         label: per.name,
+        state: per.state
       });
       return per;
     });
-    return <Select options={new_a} />;
+    return <Select options={new_a} onChange={(a)=>{
+      window.location = `/courses/state/${a.state}`
+    }}/>;
   };
 
   const CourseSelect = () => {
@@ -26,12 +29,6 @@ const CourseSearch = () => {
       return per;
     });
     return <Select options={new_a} />;
-  };
-
-  const renderList = (el) => {
-    if (!el) return null;
-
-    return <span className="lists">{el.name}</span>;
   };
 
   return (

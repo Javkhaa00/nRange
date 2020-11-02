@@ -1,0 +1,106 @@
+.courses {
+  height: 99vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &--header {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+  }
+  &--wrapper {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    &--lists {
+      height: 100%;
+      width: 35%;
+      &--club {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        font-family: "Bebas Neue";
+        color: rgb(0, 0, 0);
+        line-height: 0.625;
+        padding: 8px 0px 8px 0px;
+        cursor: pointer;
+      }
+      &--club:hover {
+        color: rgb(120, 188, 65);
+      }
+      &--sub {
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+        color: rgb(0, 0, 0);
+        line-height: 0.625;
+        padding: 4px 0px 4px 0px;
+        cursor: pointer;
+      }
+      &--sub-shrink {
+        height: 0;
+        overflow: hidden;
+        transition: 0.2s ease-in-out;
+      }
+      &--sub:hover {
+        color: rgb(120, 188, 65);
+      }
+    }
+    &--details {
+      height: 100%;
+      width: 65%;
+      display: flex;
+      &--left {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        &--title {
+          font-size: 28px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 0.625;
+          padding: 8px 0px 8px 0px;
+        }
+      }
+      &--right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        &--title {
+          font-size: 28px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 0.625;
+          padding: 8px 0px 8px 0px;
+        }
+      }
+    }
+  }
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .right {
+    transform: rotate(-45deg);
+    transition: 0.2s ease-in-out;
+  }
+
+  .left {
+    transform: rotate(135deg);
+  }
+
+  .up {
+    transform: rotate(-135deg);
+  }
+
+  .down {
+    transition: 0.2s ease-in-out;
+    transform: rotate(45deg);
+  }
+}

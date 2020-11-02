@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
-
   return (
     <div className="header" id="header-section">
       <nav className="header--nav">
