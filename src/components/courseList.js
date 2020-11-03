@@ -1,5 +1,4 @@
-import Axios from "axios";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import browseCourse from "../json/browseCourse.json";
 import courseList from "../json/courses.json";
 
@@ -7,7 +6,11 @@ const CourseList = () => {
   const renderList = (el) => {
     if (!el) return null;
 
-    return <a href="" ><span className="lists">{el.name}</span></a>;
+    return (
+      <a href="">
+        <span className="lists">{el.name}</span>
+      </a>
+    );
   };
 
   return (

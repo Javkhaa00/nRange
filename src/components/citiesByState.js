@@ -4,7 +4,7 @@ import axios from "axios";
 const CitiesByState = (props) => {
   const [cities, setCities] = useState([]);
   const { state } = props.match.params;
-  
+
   useEffect(() => {
     const url = "http://localhost:8000/cities/";
     console.log(props);

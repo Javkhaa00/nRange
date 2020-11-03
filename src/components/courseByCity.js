@@ -3,6 +3,7 @@ import axios from "axios";
 
 const CourseByCity = (props) => {
   const [courses, setCourses] = useState([]);
+  const [detail, setDetail] = useState(null);
   const { city, state } = props.match.params;
 
   useEffect(() => {
@@ -40,13 +41,33 @@ const CourseByCity = (props) => {
     setCourses(newCourses);
   };
 
+  const courseDetail = (per) => {
+    console.log(per, "INSIDE COURSE DETAIL");
+    setDetail(
+      <div className="courses--wrapper--details">
+        <div className="courses--wrapper--details--left">
+          <div className="courses--wrapper--details--left--title">
+            {per.coursename}
+          </div>
+        </div>
+        <div className="courses--wrapper--details--right">
+          <div className="courses--wrapper--details--right--title">
+            Golf courses staff
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   const renderCourses = (el, index) => {
     const arrowClass = "arrow " + (el.expand ? "down" : "right");
     return (
       <div key={el.id}>
         <div
           className="courses--wrapper--lists--club"
-          onClick={() => toggleArrow(index)}
+          onClick={() => {
+            toggleArrow(index);
+          }}
         >
           <span style={{ paddingRight: 5 }}>{el.clubName}</span>
           <span className={arrowClass}></span>
@@ -61,7 +82,11 @@ const CourseByCity = (props) => {
           {el.sub.map((per) => {
             return (
               <div
-                className="courses--wrapper--lists--sub"
+                key={per.id}
+                onClick={() => {
+                  courseDetail(per);
+                }}
+                className="courses--wrapper--lists--sub-title"
                 style={{ paddingLeft: "12px", marginBottom: "4px" }}
               >
                 {per.coursename}
@@ -81,20 +106,7 @@ const CourseByCity = (props) => {
           <div className="courses--wrapper--lists">
             {courses.map(renderCourses)}
           </div>
-          <div className="courses--wrapper--details">
-            <div className="courses--wrapper--details--left">
-              <span className="courses--wrapper--details--left--title">
-                Bella Vista Village Golf courses
-              </span>
-              <div></div>
-            </div>
-            <div className="courses--wrapper--details--right">
-              <span className="courses--wrapper--details--right--title">
-                Golf course staff
-              </span>
-              <div></div>
-            </div>
-          </div>
+          {detail}
         </div>
       </div>
     </>
