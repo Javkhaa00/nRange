@@ -3,12 +3,14 @@ import browseCourse from "../json/browseCourse.json";
 import courseList from "../json/courses.json";
 
 const CourseList = () => {
+
   const renderList = (el) => {
     if (!el) return null;
-
     return (
-      <a href="">
-        <span className="lists">{el.name}</span>
+      <a href={`/courses/state/${el.state}`}>
+        <span key={el.id} className="lists">
+          {el.name}
+        </span>
       </a>
     );
   };

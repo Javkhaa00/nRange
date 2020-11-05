@@ -1,5 +1,7 @@
 .courses {
-  height: 99vh;
+  // height: 99vh;
+  padding-top: 64px;
+  padding-bottom: 64px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11,12 +13,13 @@
     display: flex;
     align-items: center;
   }
+  &--container {
+    display: flex;
+  }
   &--wrapper {
     width: 60%;
-    height: 100%;
     display: flex;
     &--lists {
-      height: 100%;
       width: 35%;
       &--club {
         display: flex;
@@ -27,9 +30,6 @@
         line-height: 0.625;
         padding: 8px 0px 8px 0px;
         cursor: pointer;
-      }
-      &--club:hover {
-        color: rgb(120, 188, 65);
       }
       &--sub {
         font-size: 16px;
@@ -51,38 +51,430 @@
         color: rgb(0, 0, 0);
         cursor: pointer;
       }
-      &--sub-title:hover {
-        color: rgb(120, 188, 65);
-      }
     }
     &--details {
-      height: 100%;
       width: 65%;
       display: flex;
+      flex-direction: column;
       &--left {
         width: 50%;
-        height: 100%;
         display: flex;
         flex-direction: column;
+        border-right: 2px solid rgba(0, 0, 0, 0.3);
+        padding-left: 24px;
         &--title {
           font-size: 28px;
           font-family: "Bebas Neue";
           color: rgb(0, 0, 0);
-          line-height: 0.625;
-          padding: 8px 0px 8px 0px;
+          padding: 0px 0px 8px 0px;
+          margin-bottom: 10%;
+        }
+        &--desc {
+          width: 95%;
+          font-size: 14px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 12px;
+        }
+        &--tel {
+          font-size: 14px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--tel::before {
+          content: "Tel : ";
+          font-size: 14px;
+          font-weight: 600;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+        }
+        &--fax {
+          font-size: 14px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--fax::before {
+          content: "Fax : ";
+          font-size: 14px;
+          font-weight: 600;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+        }
+        &--street {
+          font-size: 14px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--street::before {
+          content: "Street : ";
+          font-size: 14px;
+          font-weight: 600;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+        }
+        &--website {
+          font-size: 14px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--website::before {
+          content: "Website : ";
+          font-size: 14px;
+          font-weight: 600;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+        }
+        &--date {
+          font-size: 14px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--date::before {
+          content: "Mapped date : ";
+          font-size: 14px;
+          font-weight: 600;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+        }
+        &--type {
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--type::before {
+          display: inline-block;
+          width: 40%;
+          content: "Type : ";
+          font-size: 24px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--yearbuilt {
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--yearbuilt::before {
+          display: inline-block;
+          width: 40%;
+          content: "Year Built : ";
+          font-size: 24px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--dresscode {
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--dresscode::before {
+          display: inline-block;
+          width: 40%;
+          content: "Dress code : ";
+          font-size: 24px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--spikes {
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--spikes::before {
+          display: inline-block;
+          width: 40%;
+          content: "Spikes : ";
+          font-size: 24px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--restaurant {
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--restaurant::before {
+          display: inline-block;
+          width: 40%;
+          content: "Restaurant : ";
+          font-size: 24px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--access {
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--access::before {
+          display: inline-block;
+          width: 40%;
+          content: "Access : ";
+          font-size: 24px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
         }
       }
       &--right {
         width: 50%;
-        height: 100%;
         display: flex;
+        padding-left: 48px;
         flex-direction: column;
         &--title {
           font-size: 28px;
           font-family: "Bebas Neue";
           color: rgb(0, 0, 0);
-          line-height: 0.625;
-          padding: 8px 0px 8px 0px;
+          padding: 0px 0px 8px 0px;
+          margin-bottom: 10%;
+        }
+        &--designer {
+          font-size: 24px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--designer::before {
+          display: block;
+          content: "Designer :";
+          opacity: 0.7;
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+        }
+        &--onsite {
+          font-size: 24px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--onsite::before {
+          display: block;
+          content: "On Site Golf Professional :";
+          opacity: 0.7;
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+        }
+        &--manager {
+          font-size: 24px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--manager::before {
+          display: block;
+          content: "General Manager :";
+          opacity: 0.7;
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+        }
+        &--super {
+          font-size: 24px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--super::before {
+          display: block;
+          content: "Super Intendent :";
+          opacity: 0.7;
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+        }
+        &--rental {
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--rental::before {
+          display: inline-block;
+          width: 40%;
+          content: "Rental Clubs : ";
+          font-size: 24px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--carts {
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--carts::before {
+          display: inline-block;
+          width: 40%;
+          content: "Carts : ";
+          font-size: 24px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--cartfees {
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--cartfees::before {
+          display: inline-block;
+          width: 40%;
+          content: "Cartfees : ";
+          font-size: 24px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--pullcarts {
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--pullcarts::before {
+          display: inline-block;
+          width: 40%;
+          content: "Pullcarts : ";
+          font-size: 24px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--caddies {
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--caddies::before {
+          display: inline-block;
+          width: 40%;
+          content: "Caddies : ";
+          font-size: 24px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--guests {
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--guests::before {
+          display: inline-block;
+          width: 40%;
+          content: "Guests : ";
+          font-size: 24px;
+          font-family: "Bebas Neue";
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
         }
       }
     }
@@ -91,7 +483,7 @@
     border: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
-    padding: 3px;
+    padding: 4px;
   }
   .right {
     transform: rotate(-45deg);

@@ -27,8 +27,10 @@ const CourseByCity = (props) => {
           let per = new_data[key];
           arr.push({ ...per.sub[0], ...{ sub: per.sub } });
         }
+        arr[0].expand = true;
         console.log(arr);
         setCourses(arr);
+        setDetail(arr[0].sub[0]);
       })
       .catch((error) => {
         console.error(error);
@@ -43,20 +45,7 @@ const CourseByCity = (props) => {
 
   const courseDetail = (per) => {
     console.log(per, "INSIDE COURSE DETAIL");
-    setDetail(
-      <div className="courses--wrapper--details">
-        <div className="courses--wrapper--details--left">
-          <div className="courses--wrapper--details--left--title">
-            {per.coursename}
-          </div>
-        </div>
-        <div className="courses--wrapper--details--right">
-          <div className="courses--wrapper--details--right--title">
-            Golf courses staff
-          </div>
-        </div>
-      </div>
-    );
+    setDetail(per);
   };
 
   const renderCourses = (el, index) => {
@@ -87,7 +76,11 @@ const CourseByCity = (props) => {
                   courseDetail(per);
                 }}
                 className="courses--wrapper--lists--sub-title"
-                style={{ paddingLeft: "12px", marginBottom: "4px" }}
+                style={{
+                  paddingLeft: "12px",
+                  marginBottom: "4px",
+                  color: per.id === detail?.id ? "rgb(120, 188, 65)" : null,
+                }}
               >
                 {per.coursename}
               </div>
@@ -106,7 +99,99 @@ const CourseByCity = (props) => {
           <div className="courses--wrapper--lists">
             {courses.map(renderCourses)}
           </div>
-          {detail}
+          {detail && (
+            <>
+              <div className="courses--wrapper--details">
+                <div className="courses--container">
+                  <div className="courses--wrapper--details--left">
+                    <div className="courses--wrapper--details--left--title">
+                      {detail.coursename}
+                    </div>
+                    <div className="courses--wrapper--details--left--desc">
+                      {detail.description}
+                    </div>
+                    <div className="courses--wrapper--details--left--street">
+                      {detail.street}
+                    </div>
+                    <div className="courses--wrapper--details--left--tel">
+                      {detail.phone}
+                    </div>
+                    <div className="courses--wrapper--details--left--fax">
+                      {detail.fax}
+                    </div>
+                    <div className="courses--wrapper--details--left--website">
+                      {detail.courseUrl}
+                    </div>
+                    <div className="courses--wrapper--details--left--date">
+                      {detail.noDate.date.substr(0, 10)}
+                    </div>
+                  </div>
+                  <div className="courses--wrapper--details--right">
+                    <div className="courses--wrapper--details--right--title">
+                      Golf courses staff
+                    </div>
+                    <div className="courses--wrapper--details--right--designer">
+                      {detail.designer}
+                    </div>
+                    <div className="courses--wrapper--details--right--onsite">
+                      {detail.onsitegolfpro}
+                    </div>
+                    <div className="courses--wrapper--details--right--manager">
+                      {detail.generalManager}
+                    </div>
+                    <div className="courses--wrapper--details--right--super">
+                      {detail.superintendent}
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="courses--container"
+                  style={{ paddingTop: "24px", paddingBottom: "104px" }}
+                >
+                  <div className="courses--wrapper--details--left">
+                    <div className="courses--wrapper--details--left--type">
+                      {detail.type}
+                    </div>
+                    <div className="courses--wrapper--details--left--yearbuilt">
+                      {detail.yearBuilt}
+                    </div>
+                    <div className="courses--wrapper--details--left--dresscode">
+                      {detail.dresscode}
+                    </div>
+                    <div className="courses--wrapper--details--left--spikes">
+                      {detail.spikes}
+                    </div>
+                    <div className="courses--wrapper--details--left--restaurant">
+                      {detail.restaurant}
+                    </div>
+                    <div className="courses--wrapper--details--left--access">
+                      {detail.access}
+                    </div>
+                  </div>
+                  <div className="courses--wrapper--details--right">
+                    <div className="courses--wrapper--details--right--guests">
+                      {detail.guests}
+                    </div>
+                    <div className="courses--wrapper--details--right--rental">
+                      {detail.rentalclubs}
+                    </div>
+                    <div className="courses--wrapper--details--right--carts">
+                      {detail.carts}
+                    </div>
+                    <div className="courses--wrapper--details--right--cartfees">
+                      {detail.cartfees}
+                    </div>
+                    <div className="courses--wrapper--details--right--pullcarts">
+                      {detail.pullcarts}
+                    </div>
+                    <div className="courses--wrapper--details--right--caddies">
+                      {detail.caddies}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </>
