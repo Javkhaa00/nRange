@@ -3,7 +3,6 @@ import browseCourse from "../json/browseCourse.json";
 import courseList from "../json/courses.json";
 
 const CourseList = () => {
-
   const renderList = (el) => {
     if (!el) return null;
     return (

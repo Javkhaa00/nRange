@@ -1,12 +1,12 @@
-import React from 'react';
-import TermsText from '../components/termsText';
+import React from "react";
+import TermsText from "../components/termsText";
 
 const Terms = () => {
-    return (
-        <>
-            <TermsText />
-        </>
-    );
+  return (
+    <>
+      <TermsText />
+    </>
+  );
 };
 
 export default Terms;

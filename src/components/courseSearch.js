@@ -10,13 +10,18 @@ const CourseSearch = () => {
       new_a.push({
         value: per.name,
         label: per.name,
-        state: per.state
+        state: per.state,
       });
       return per;
     });
-    return <Select options={new_a} onChange={(a)=>{
-      window.location = `/courses/state/${a.state}`
-    }}/>;
+    return (
+      <Select
+        options={new_a}
+        onChange={(a) => {
+          window.location = `/courses/state/${a.state}`;
+        }}
+      />
+    );
   };
 
   const CourseSelect = () => {

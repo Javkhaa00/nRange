@@ -166,7 +166,7 @@ const Footer = () => {
         </div>
         <div className="footer--all-rights--logos">
           <a
-          className="footer--all-rights--logos--1"
+            className="footer--all-rights--logos--1"
             href="http://itunes.apple.com/us/app/nrange-golf-gps/id366108491?mt=8"
             target="blank"
           >
