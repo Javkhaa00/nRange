@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export const Header = () => {
+  const [input, setInput] = useState(""); // '' is the initial state value
   return (
     <div className="header" id="header-section">
       <nav className="header--nav">
@@ -20,10 +22,20 @@ export const Header = () => {
         <div className="header--nav--input">
           <input
             type="text"
+            value={input}
+            onInput={(e) => setInput(e.target.value)}
             placeholder="Search Golf Courses"
-            className="header--nav--search"
+            className="header--nav--input--search"
           />
-          <FontAwesomeIcon className="search" icon={faSearch} size="1x" />
+          <div className="header--nav--input--icon">
+            <FontAwesomeIcon
+              onClick={() => {
+                window.location = "/search/" + input;
+              }}
+              icon={faSearch}
+              size="1x"
+            />
+          </div>
         </div>
         <ul className="header--nav--buttons">
           <li>
@@ -37,18 +49,13 @@ export const Header = () => {
             </Link>
           </li>
           <li>
-            <Link
-              to="/"
-              onClick={() => {
-                window.scrollTo({
-                  top: 890,
-                  behavior: "smooth",
-                });
-              }}
+            <HashLink
               className="header--buttons"
+              smooth
+              to="/#subscribe-section"
             >
               Subscribe
-            </Link>
+            </HashLink>
           </li>
         </ul>
         <div className="header--nav--burger"></div>

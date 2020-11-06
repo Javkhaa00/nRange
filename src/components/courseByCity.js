@@ -120,10 +120,25 @@ const CourseByCity = (props) => {
                       {detail.fax}
                     </div>
                     <div className="courses--wrapper--details--left--website">
-                      {detail.courseUrl}
+                      <a href={detail.courseUrl} target="_blank">
+                        {detail.courseUrl}
+                      </a>
                     </div>
                     <div className="courses--wrapper--details--left--date">
                       {detail.noDate.date.substr(0, 10)}
+                    </div>
+                    <div className="courses--wrapper--details--left--map">
+                      <a
+                        href={detail.mapUrl ? detail.mapUrl : null}
+                        target="_blank"
+                        className="courses--wrapper--details--left--googleURL"
+                      >
+                        Map
+                        <img
+                          src="/assets/nrange-logo-footer.png"
+                          alt="nrange-logo-footer"
+                        />
+                      </a>
                     </div>
                   </div>
                   <div className="courses--wrapper--details--right">

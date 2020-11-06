@@ -5,6 +5,7 @@ import Courses from "./pages/Courses";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Info from "./components/info";
+import searchList from "./components/searchList";
 import Terms from "./pages/Terms";
 import CitiesByState from "./components/citiesByState";
 import CourseByCity from "./components/courseByCity";
@@ -16,6 +17,7 @@ function App() {
       <Info />
       <Header />
       <Switch>
+        <Route path="/search/:search" exact={true} component={searchList} />
         <Route
           path="/courses/state/:state/:city"
           exact={true}

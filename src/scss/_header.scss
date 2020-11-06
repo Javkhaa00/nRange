@@ -21,24 +21,45 @@
       width: 40%;
       display: flex;
       align-items: center;
-    }
-    &--search {
-      font-size: 18px;
-      font-family: "OpenSans", sans-serif;
-      color: rgba(255, 255, 255, 0.78);
-      text-indent: 16px;
-      border: 2px solid rgb(0, 0, 0);
-      background-color: rgba(255, 255, 255, 0.2);
-      border-radius: 20px;
-      width: 408px;
-      height: 32px;
-      z-index: 1;
-      outline: 0;
-    }
-    &--search::placeholder {
-      font-family: "Bebas Neue";
-      color: rgba(255, 255, 255, 0.3);
-      font-size: 20px;
+      &--icon {
+        font-size: 18px;
+        font-family: "OpenSans", sans-serif;
+        color: rgba(255, 255, 255, 0.78);
+        text-indent: 16px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 10%;
+        height: 32px;
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        cursor: pointer;
+      }
+      &--icon:hover {
+        opacity: 0.8;
+      }
+      &--search {
+        font-size: 18px;
+        font-family: "OpenSans", sans-serif;
+        color: rgba(255, 255, 255, 0.78);
+        text-indent: 16px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 90%;
+        height: 32px;
+        z-index: 1;
+        outline: 0;
+      }
+      &--search::placeholder {
+        font-family: "Bebas Neue";
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 20px;
+      }
     }
     &--buttons {
       width: 40%;

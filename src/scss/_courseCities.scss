@@ -1,5 +1,4 @@
 .courses {
-  // height: 99vh;
   padding-top: 64px;
   padding-bottom: 64px;
   width: 100%;
@@ -27,7 +26,7 @@
         font-size: 24px;
         font-family: "Bebas Neue";
         color: rgb(0, 0, 0);
-        line-height: 0.625;
+        line-height: 1.025;
         padding: 8px 0px 8px 0px;
         cursor: pointer;
       }
@@ -71,6 +70,13 @@
           color: rgb(0, 0, 0);
           padding: 0px 0px 8px 0px;
           margin-bottom: 10%;
+        }
+        &--googleURL {
+          img {
+            height: 1.3rem;
+            padding-left: 4px;
+            margin-bottom: -4px;
+          }
         }
         &--desc {
           width: 95%;
@@ -279,6 +285,23 @@
           line-height: 1.429;
           text-align: left;
           padding-bottom: 4px;
+        }
+        &--map {
+          font-size: 14px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
+          padding-bottom: 4px;
+        }
+        &--map::before {
+          content: "Google Map : ";
+          font-size: 14px;
+          font-weight: 600;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(0, 0, 0);
+          line-height: 1.429;
+          text-align: left;
         }
       }
       &--right {
