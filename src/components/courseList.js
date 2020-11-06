@@ -6,10 +6,8 @@ const CourseList = () => {
   const renderList = (el) => {
     if (!el) return null;
     return (
-      <a href={`/courses/state/${el.state}`}>
-        <span key={el.id} className="lists">
-          {el.name}
-        </span>
+      <a key={el.state} href={`/courses/state/${el.state}`}>
+        <span className="lists">{el.name}</span>
       </a>
     );
   };

@@ -23,8 +23,6 @@ const SearchList = (props) => {
       });
   }, []);
 
-  console.log(result);
-
   const renderResult = (el) => {
     return (
       <a

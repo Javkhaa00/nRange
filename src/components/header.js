@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 export const Header = () => {
-  const [input, setInput] = useState(""); // '' is the initial state value
+  const [input, setInput] = useState("");
   return (
     <div className="header" id="header-section">
       <nav className="header--nav">
@@ -23,7 +23,7 @@ export const Header = () => {
           <input
             type="text"
             value={input}
-            onInput={(e) => setInput(e.target.value)}
+            onChange={(e) => setInput(e.target.value)}
             placeholder="Search Golf Courses"
             className="header--nav--input--search"
           />
