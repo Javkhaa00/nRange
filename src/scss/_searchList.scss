@@ -11,6 +11,7 @@
       padding-bottom: 136px;
       width: 100%;
       display: flex;
+      justify-content: center;
       flex-direction: row;
       flex-wrap: wrap;
       align-items: space-between;
@@ -38,4 +39,24 @@
       }
     }
   }
+}
+
+.pagination {
+  width: 92px;
+  list-style: none;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+}
+
+.active {
+  background-color: rgb(120, 188, 65);
+  outline: none;
+}
+.previous {
+  background-color: rgb(120, 188, 65);
+  outline: none;
+}
+.next {
+  background-color: rgb(120, 188, 65);
+  outline: none;
 }

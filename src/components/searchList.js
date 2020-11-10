@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ReactPaginate from "react-paginate";
 import axios from "axios";
 
 const SearchList = (props) => {
@@ -44,6 +45,15 @@ const SearchList = (props) => {
       <div className="search-list--wrapper">
         <div className="search-list--wrapper--lists">
           {result.map(renderResult)}
+          <ReactPaginate
+            marginPagesDisplayed={2}
+            containerClassName={"pagination"}
+            activeClassName={"active"}
+            previousLabel={"Previous"}
+            nextLabel={"Next"}
+            pageCount={10}
+            pageRangeDisplayed={3}
+          />
         </div>
       </div>
     </div>
