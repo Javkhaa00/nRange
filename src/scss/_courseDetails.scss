@@ -24,3 +24,51 @@
     }
   }
 }
+
+@include respond-between(xlg, xxlg) {
+  .course-detail {
+    &--wrapper {
+      width: 70%;
+    }
+  }
+}
+
+@include respond-between(lg, xlg) {
+  .course-detail {
+    &--wrapper {
+      width: 75%;
+    }
+  }
+}
+
+@include respond-between(md, lg) {
+  .course-detail {
+    &--wrapper {
+      width: 85%;
+    }
+  }
+}
+
+@include respond-between(sm, md) {
+  .course-detail {
+    &--wrapper {
+      width: 85%;
+    }
+  }
+}
+
+@include respond-between(xs, sm) {
+  .course-detail {
+    &--wrapper {
+      width: 100%;
+    }
+  }
+}
+
+@include respond-between(xxs, xs) {
+  .course-detail {
+    &--wrapper {
+      width: 100%;
+    }
+  }
+}
