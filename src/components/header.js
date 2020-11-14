@@ -1,11 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import useWindowSize from "../hooks/UseWindowSize";
 
 export const Header = () => {
   const [input, setInput] = useState("");
+
+  const decodeurl = (a, b) => {
+    let url = new URL(a);
+    return url.searchParams.get(b) || "";
+  };
+
+  useEffect(() => {
+    setInput(decodeurl(window.location.href, "keyword"));
+  }, []);
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      window.location.href = "/search?keyword=" + input;
+    }
+  };
+
   return (
     <div className="header" id="header-section">
       <nav className="header--nav">
@@ -23,19 +40,17 @@ export const Header = () => {
           <input
             type="text"
             value={input}
+            onKeyPress={handleKeyDown}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Search Golf Courses"
             className="header--nav--input--search"
           />
-          <div className="header--nav--input--icon">
-            <FontAwesomeIcon
-              onClick={() => {
-                window.location = "/search/" + input;
-              }}
-              icon={faSearch}
-              size="1x"
-            />
-          </div>
+          <Link
+            className="header--nav--input--icon"
+            to={`/search?keyword=${input}`}
+          >
+            <FontAwesomeIcon className="search" icon={faSearch} size="1x" />
+          </Link>
         </div>
         <ul className="header--nav--buttons">
           <li>

@@ -4,10 +4,19 @@ import axios from "axios";
 
 const SearchList = (props) => {
   const [result, setResult] = useState([]);
-  const { search } = props.match.params;
+  const [pageSize, setPageSize] = useState(60);
+  const [page, setPage] = useState(0);
+
+  const decodeurl = (a, b) => {
+    let url = new URL(a);
+    return url.searchParams.get(b);
+  };
 
   useEffect(() => {
-    let url = "http://localhost:8000/search/" + search;
+    console.log(window.location.search);
+    let url =
+      "http://localhost:8000/search?keyword=" +
+      decodeurl(window.location.href, "keyword");
     axios
       .post(url)
       .then(function (data) {
@@ -22,7 +31,7 @@ const SearchList = (props) => {
       .then(function () {
         // always executed
       });
-  }, []);
+  }, [window.location.search]);
 
   const renderResult = (el) => {
     return (
@@ -40,21 +49,27 @@ const SearchList = (props) => {
     );
   };
 
+  console.log(page);
   return (
     <div className="search-list">
       <div className="search-list--wrapper">
         <div className="search-list--wrapper--lists">
-          {result.map(renderResult)}
-          <ReactPaginate
-            marginPagesDisplayed={2}
-            containerClassName={"pagination"}
-            activeClassName={"active"}
-            previousLabel={"Previous"}
-            nextLabel={"Next"}
-            pageCount={10}
-            pageRangeDisplayed={3}
-          />
+          {result
+            .slice(page * pageSize, (page + 1) * pageSize)
+            .map(renderResult)}
         </div>
+        <ReactPaginate
+          previousLabel={"previous"}
+          nextLabel={"next"}
+          breakLabel={"..."}
+          breakClassName={"break-me"}
+          pageCount={(result.length - 59) / 60 + 1}
+          marginPagesDisplayed={1}
+          pageRangeDisplayed={7}
+          onPageChange={({ selected }) => setPage(selected)}
+          containerClassName={"pagination"}
+          activeClassName={"active"}
+        />
       </div>
     </div>
   );

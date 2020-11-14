@@ -17,7 +17,7 @@ function App() {
       <Info />
       <Header />
       <Switch>
-        <Route path="/search/:search" exact={true} component={searchList} />
+        <Route path="/search" exact={true} component={searchList} />
         <Route
           path="/courses/state/:state/:city"
           exact={true}
