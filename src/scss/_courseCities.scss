@@ -1,6 +1,6 @@
 .courses {
   padding-top: 64px;
-  padding-bottom: 64px;
+  padding-bottom: 84px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -22,6 +22,7 @@
       width: 35%;
       &--club {
         display: flex;
+        width: 90%;
         align-items: center;
         font-size: 24px;
         font-family: "Bebas Neue";
@@ -70,6 +71,7 @@
           color: rgb(0, 0, 0);
           padding: 0px 0px 8px 0px;
           margin-bottom: 10%;
+          width: 90%;
         }
         &--googleURL {
           img {
@@ -79,7 +81,7 @@
           }
         }
         &--desc {
-          width: 95%;
+          width: 90%;
           font-size: 14px;
           font-family: "Open Sans", sans-serif;
           color: rgb(0, 0, 0);
@@ -93,6 +95,7 @@
           color: rgb(0, 0, 0);
           line-height: 1.429;
           text-align: left;
+          width: 90%;
           padding-bottom: 4px;
         }
         &--tel::before {
@@ -109,6 +112,7 @@
           font-family: "Open Sans", sans-serif;
           color: rgb(0, 0, 0);
           line-height: 1.429;
+          width: 90%;
           text-align: left;
           padding-bottom: 4px;
         }
@@ -177,6 +181,7 @@
           font-family: "Open Sans", sans-serif;
           color: rgb(0, 0, 0);
           line-height: 1.429;
+          width: 90%;
           text-align: left;
           padding-bottom: 4px;
         }
@@ -197,6 +202,7 @@
           color: rgb(0, 0, 0);
           line-height: 1.429;
           text-align: left;
+          width: 90%;
           padding-bottom: 4px;
         }
         &--yearbuilt::before {
@@ -216,6 +222,7 @@
           color: rgb(0, 0, 0);
           line-height: 1.429;
           text-align: left;
+          width: 90%;
           padding-bottom: 4px;
         }
         &--dresscode::before {
@@ -236,6 +243,7 @@
           line-height: 1.429;
           text-align: left;
           padding-bottom: 4px;
+          width: 90%;
         }
         &--spikes::before {
           display: inline-block;
@@ -253,6 +261,7 @@
           font-family: "Open Sans", sans-serif;
           color: rgb(0, 0, 0);
           line-height: 1.429;
+          width: 90%;
           text-align: left;
           padding-bottom: 4px;
         }
@@ -269,6 +278,7 @@
         }
         &--access {
           font-size: 16px;
+          width: 90%;
           font-family: "Open Sans", sans-serif;
           color: rgb(0, 0, 0);
           line-height: 1.429;
@@ -292,7 +302,7 @@
           color: rgb(0, 0, 0);
           line-height: 1.429;
           text-align: left;
-          padding-bottom: 4px;
+          padding-bottom: 24px;
         }
         &--map::before {
           content: "Google Map : ";
@@ -393,6 +403,7 @@
           font-family: "Open Sans", sans-serif;
           color: rgb(0, 0, 0);
           line-height: 1.429;
+          width: 90%;
           text-align: left;
           padding-bottom: 4px;
         }
@@ -413,6 +424,7 @@
           color: rgb(0, 0, 0);
           line-height: 1.429;
           text-align: left;
+          width: 90%;
           padding-bottom: 4px;
         }
         &--carts::before {
@@ -431,6 +443,7 @@
           font-family: "Open Sans", sans-serif;
           color: rgb(0, 0, 0);
           line-height: 1.429;
+          width: 90%;
           text-align: left;
           padding-bottom: 4px;
         }
@@ -451,6 +464,7 @@
           color: rgb(0, 0, 0);
           line-height: 1.429;
           text-align: left;
+          width: 90%;
           padding-bottom: 4px;
         }
         &--pullcarts::before {
@@ -469,6 +483,7 @@
           font-family: "Open Sans", sans-serif;
           color: rgb(0, 0, 0);
           line-height: 1.429;
+          width: 90%;
           text-align: left;
           padding-bottom: 4px;
         }
@@ -488,6 +503,7 @@
           font-family: "Open Sans", sans-serif;
           color: rgb(0, 0, 0);
           line-height: 1.429;
+          width: 90%;
           text-align: left;
           padding-bottom: 4px;
         }
@@ -542,40 +558,189 @@
   .courses {
     &--wrapper {
       width: 75%;
+      &--details {
+        &--left {
+          padding-left: 0%;
+        }
+      }
     }
   }
 }
 
 @include respond-between(md, lg) {
   .courses {
+    padding-top: 32px;
+    padding-bottom: 48px;
+    &--container {
+      flex-direction: row;
+    }
     &--wrapper {
-      width: 85%;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      &--lists {
+        width: 90%;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+      }
+      &--details {
+        width: 100%;
+        flex-direction: column;
+        &--left {
+          width: 90%;
+          padding-left: 9%;
+          border-right: unset;
+          &--title {
+            margin-bottom: 2%;
+            padding-top: 2%;
+            margin-left: -2%;
+          }
+        }
+        &--right {
+          width: 90%;
+          display: flex;
+          flex-wrap: wrap;
+          border-right: unset;
+          padding-left: 0%;
+          &--title {
+            margin-bottom: 2%;
+            padding-top: 2%;
+            margin-left: -2%;
+          }
+        }
+      }
     }
   }
 }
 
 @include respond-between(sm, md) {
   .courses {
+    padding-top: 32px;
+    padding-bottom: 36px;
+    &--container {
+      flex-direction: row;
+    }
     &--wrapper {
-      width: 85%;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      &--lists {
+        width: 90%;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+      }
+      &--details {
+        width: 100%;
+        flex-direction: column;
+        &--left {
+          width: 90%;
+          padding-left: 9%;
+          border-right: unset;
+          &--title {
+            margin-bottom: 2%;
+            padding-top: 2%;
+            margin-left: -2%;
+          }
+        }
+        &--right {
+          width: 90%;
+          display: flex;
+          flex-wrap: wrap;
+          border-right: unset;
+          padding-left: 0%;
+          &--title {
+            padding-top: 2%;
+            margin-bottom: 2%;
+            margin-left: -2%;
+          }
+        }
+      }
     }
   }
 }
 
 @include respond-between(xs, sm) {
   .courses {
+    padding-top: 32px;
+    padding-bottom: 0;
+    &--container {
+      flex-direction: column;
+    }
     &--wrapper {
       width: 100%;
-      padding-left: 5%;
+      flex-direction: column;
+      align-items: center;
+      &--lists {
+        width: 90%;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+      }
+      &--details {
+        width: 100%;
+        flex-direction: column;
+        &--left {
+          width: 90%;
+          padding-left: 9%;
+          border-right: unset;
+          &--title {
+            margin-bottom: 2%;
+            padding-top: 2%;
+            margin-left: -2%;
+          }
+        }
+        &--right {
+          width: 90%;
+          display: flex;
+          flex-wrap: wrap;
+          border-right: unset;
+          padding-left: 9%;
+          &--title {
+            margin-bottom: 2%;
+            margin-left: -2%;
+          }
+        }
+      }
     }
   }
 }
 
 @include respond-between(xxs, xs) {
   .courses {
+    padding-top: 32px;
+    padding-bottom: 0;
+    &--container {
+      flex-direction: column;
+    }
     &--wrapper {
       width: 100%;
-      padding-left: 5%;
+      flex-direction: column;
+      align-items: center;
+      &--lists {
+        width: 90%;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+      }
+      &--details {
+        width: 100%;
+        flex-direction: column;
+        &--left {
+          width: 90%;
+          padding-left: 9%;
+          border-right: unset;
+          &--title {
+            margin-bottom: 2%;
+            padding-top: 2%;
+            margin-left: -2%;
+          }
+        }
+        &--right {
+          width: 90%;
+          display: flex;
+          flex-wrap: wrap;
+          border-right: unset;
+          padding-left: 9%;
+          &--title {
+            margin-bottom: 2%;
+            margin-left: -2%;
+          }
+        }
+      }
     }
   }
 }

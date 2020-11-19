@@ -68,6 +68,36 @@
       align-items: center;
     }
   }
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 2em;
+  }
+
+  .change {
+    display: block;
+    z-index: 100;
+    position: absolute;
+    right: 2em;
+  }
+
+  .stick,
+  .stick1 {
+    width: 36px;
+    height: 2px;
+    background-color: white;
+    margin: 12px 0;
+    transition: 0.4s;
+  }
+
+  .change .stick {
+    transform: rotate(-45deg) translate(-4px, 6px);
+  }
+
+  .change .stick1 {
+    transform: rotate(45deg) translate(-3px, -6px);
+  }
 
   ul {
     display: flex;
@@ -194,5 +224,14 @@
     ul {
       display: none;
     }
+    &--buttons {
+      width: 40%;
+      display: none;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+  .hamburger {
+    display: inline-block !important;
   }
 }

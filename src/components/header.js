@@ -4,9 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import useWindowSize from "../hooks/UseWindowSize";
+import { setActiveLink } from "react-scroll/modules/mixins/scroller";
 
 export const Header = () => {
   const [input, setInput] = useState("");
+  const [activeClass, setActive] = useState("hamburger");
 
   const decodeurl = (a, b) => {
     let url = new URL(a);
@@ -73,7 +75,19 @@ export const Header = () => {
             </HashLink>
           </li>
         </ul>
-        <div className="header--nav--burger"></div>
+        <div
+          className={activeClass}
+          onClick={() => {
+            if (activeClass === "hamburger") {
+              setActive("change");
+            } else {
+              setActive("hamburger");
+            }
+          }}
+        >
+          <div className="stick"></div>
+          <div className="stick1"></div>
+        </div>
       </nav>
     </div>
   );

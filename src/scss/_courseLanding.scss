@@ -65,9 +65,22 @@
   }
 }
 
+@include respond-between(xlg, xxlg) {
+  .course-landing {
+    background-size: 100rem;
+    background-position-y: 15rem;
+    &--title {
+      padding-top: 4%;
+    }
+    &--background {
+      left: -10%;
+    }
+  }
+}
+
 @include respond-between(lg, xlg) {
   .course-landing {
-    background-size: 75rem;
+    background-size: 90rem;
     background-position-y: 15rem;
     &--title {
       padding-top: 4%;
@@ -81,7 +94,7 @@
 @include respond-between(md, lg) {
   .course-landing {
     background-size: 60rem;
-    background-position-y: 18rem;
+    background-position-y: 20rem;
     &--title {
       padding-top: 7%;
     }
@@ -93,8 +106,8 @@
 
 @include respond-between(sm, lg) {
   .course-landing {
-    background-size: 60rem;
-    background-position-y: 20rem;
+    background-size: 70rem;
+    background-position-y: 17rem;
     &--title {
       padding-top: 10%;
     }
@@ -107,10 +120,24 @@
 
 @include respond-between(xs, sm) {
   .course-landing {
-    background-size: 50rem;
-    background-position-y: 23rem;
+    background-size: 60rem;
+    background-position-y: 12rem;
     &--title {
-      padding-top: 25%;
+      padding-top: 5%;
+    }
+    &--background {
+      background-size: 60rem;
+      left: -40%;
+    }
+  }
+}
+
+@include respond-between(xxs, xs) {
+  .course-landing {
+    background-size: 50rem;
+    background-position-y: 14rem;
+    &--title {
+      padding-top: 10%;
     }
     &--background {
       background-size: 60rem;

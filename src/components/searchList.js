@@ -1,11 +1,34 @@
 import React, { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
 import axios from "axios";
+import useWindowSize from "../hooks/UseWindowSize";
 
 const SearchList = (props) => {
   const [result, setResult] = useState([]);
   const [pageSize, setPageSize] = useState(60);
   const [page, setPage] = useState(0);
+
+  const computeSearchNumber = () => {
+    if (windowSize.width < 479) {
+      return 15;
+    }
+    if (windowSize.width < 767) {
+      return 30;
+    }
+    if (windowSize.width < 1024) {
+      return 30;
+    }
+    if (windowSize.width < 1280) {
+      return 40;
+    }
+    return 60;
+  };
+
+  const windowSize = useWindowSize();
+
+  useEffect(() => {
+    setPageSize(computeSearchNumber());
+  }, [windowSize.width]);
 
   const decodeurl = (a, b) => {
     let url = new URL(a);
@@ -13,7 +36,6 @@ const SearchList = (props) => {
   };
 
   useEffect(() => {
-    console.log(window.location.search);
     let url =
       "http://localhost:8000/search?keyword=" +
       decodeurl(window.location.href, "keyword");
@@ -49,7 +71,6 @@ const SearchList = (props) => {
     );
   };
 
-  console.log(page);
   return (
     <div className="search-list">
       <div className="search-list--wrapper">
@@ -62,10 +83,11 @@ const SearchList = (props) => {
           previousLabel={"previous"}
           nextLabel={"next"}
           breakLabel={"..."}
+          className="search--list--wrapper--pagination"
           breakClassName={"break-me"}
           pageCount={(result.length - 59) / 60 + 1}
           marginPagesDisplayed={1}
-          pageRangeDisplayed={7}
+          pageRangeDisplayed={4}
           onPageChange={({ selected }) => setPage(selected)}
           containerClassName={"pagination"}
           activeClassName={"active"}

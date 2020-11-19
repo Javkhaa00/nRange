@@ -79,6 +79,16 @@
   .course-search {
     &--wrapper {
       width: 85%;
+      &--header {
+        &--box {
+          &--title {
+            font-size: 28px;
+          }
+          &--select {
+            width: 80%;
+          }
+        }
+      }
     }
   }
 }
@@ -91,6 +101,21 @@
         &--box {
           &--title {
             font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-between(xxs, xs) {
+  .course-search {
+    &--wrapper {
+      width: 95%;
+      &--header {
+        &--box {
+          &--title {
+            font-size: 24px;
           }
         }
       }

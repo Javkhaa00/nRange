@@ -90,65 +90,67 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="footer--extra--wrapper--column">
-            <ul>
-              <li className="footer--extra--title">About</li>
-              <li className="footer--extra--desc">
-                <a
-                  className="black"
-                  href="https://www.facebook.com/nrangegolfgps"
-                  target="blank"
+          <div className="footer--extra--wrapper--row">
+            <div className="footer--extra--wrapper--row--column">
+              <ul>
+                <li className="footer--extra--title">About</li>
+                <li className="footer--extra--desc">
+                  <a
+                    className="black"
+                    href="https://www.facebook.com/nrangegolfgps"
+                    target="blank"
+                  >
+                    Facebook
+                  </a>
+                </li>
+                <li className="footer--extra--desc">
+                  <a
+                    className="black"
+                    href="https://instagram.com/nrangegolfgps"
+                    target="blank"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li className="footer--extra--desc">
+                  <a
+                    className="black"
+                    href="mailto:nRange@nrange.com?subject=To nRange&body=Support Us"
+                    target="blank"
+                  >
+                    Support
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="footer--extra--wrapper--row--column">
+              <ul>
+                <li className="footer--extra--title">Business/Partnerships</li>
+                <li className="footer--extra--desc">
+                  <a
+                    className="black"
+                    href="https://infinite.mn/#/"
+                    target="blank"
+                  >
+                    Company
+                  </a>
+                </li>
+                <li className="footer--extra--desc">
+                  <a
+                    className="black"
+                    href="mailto:info@infinite.mn ?subject=to infinite&body"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+                <li
+                  style={{ visibility: "hidden" }}
+                  className="footer--extra--desc"
                 >
-                  Facebook
-                </a>
-              </li>
-              <li className="footer--extra--desc">
-                <a
-                  className="black"
-                  href="https://instagram.com/nrangegolfgps"
-                  target="blank"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li className="footer--extra--desc">
-                <a
-                  className="black"
-                  href="mailto:nRange@nrange.com?subject=To nRange&body=Support Us"
-                  target="blank"
-                >
-                  Support
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer--extra--wrapper--column">
-            <ul>
-              <li className="footer--extra--title">Business/Partnerships</li>
-              <li className="footer--extra--desc">
-                <a
-                  className="black"
-                  href="https://infinite.mn/#/"
-                  target="blank"
-                >
-                  Company
-                </a>
-              </li>
-              <li className="footer--extra--desc">
-                <a
-                  className="black"
-                  href="mailto:info@infinite.mn ?subject=to infinite&body"
-                >
-                  Contact Us
-                </a>
-              </li>
-              <li
-                style={{ visibility: "hidden" }}
-                className="footer--extra--desc"
-              >
-                Blog
-              </li>
-            </ul>
+                  Blog
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

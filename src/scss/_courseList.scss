@@ -80,6 +80,7 @@
 
 @include respond-between(md, lg) {
   .course-list {
+    height: 120vh;
     &--lists {
       &--wrapper {
         width: 85%;
@@ -90,21 +91,28 @@
 
 @include respond-between(sm, md) {
   .course-list {
+    height: 130vh;
     &--lists {
       &--wrapper {
         width: 85%;
+        &--title {
+          font-size: 28px;
+        }
         &--browse {
           width: 40%;
           padding-right: 10%;
         }
       }
     }
+    .lists {
+      font-size: 12px;
+    }
   }
 }
 
 @include respond-between(xs, sm) {
   .course-list {
-    height: 100vh;
+    height: 120vh;
     &--lists {
       &--wrapper {
         width: 95%;
@@ -119,6 +127,7 @@
           }
         }
         &--international {
+          overflow: hidden;
           &--texts {
             height: 80%;
           }
@@ -128,7 +137,40 @@
   }
 
   .lists {
-    font-size: 14spx;
+    font-size: 12px;
+  }
+  .lists:hover {
+    color: rgb(120, 188, 65);
+  }
+}
+
+@include respond-between(xxs, xs) {
+  .course-list {
+    height: 135vh;
+    &--lists {
+      &--wrapper {
+        width: 95%;
+        &--title {
+          font-size: 24px;
+        }
+        &--browse {
+          width: 40%;
+          padding-right: 7%;
+          &--texts {
+            height: 80%;
+          }
+        }
+        &--international {
+          &--texts {
+            height: 87%;
+          }
+        }
+      }
+    }
+  }
+
+  .lists {
+    font-size: 10px;
   }
   .lists:hover {
     color: rgb(120, 188, 65);
