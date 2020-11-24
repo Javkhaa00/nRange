@@ -1,6 +1,6 @@
 import React from "react";
-import HomeLanding from "../components/homeLanding";
-import HomeSubscription from "../components/homeSubscription";
+import HomeLanding from "../container/homeLanding";
+import HomeSubscription from "../container/homeSubscription";
 
 export const Home = () => {
   return (

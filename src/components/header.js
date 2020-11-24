@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import useWindowSize from "../hooks/UseWindowSize";
-import { setActiveLink } from "react-scroll/modules/mixins/scroller";
 
 export const Header = () => {
   const [input, setInput] = useState("");

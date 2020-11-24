@@ -1,5 +1,5 @@
 import React from "react";
-import TermsText from "../components/termsText";
+import TermsText from "../container/termsText";
 
 const Terms = () => {
   return (

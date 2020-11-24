@@ -1,7 +1,7 @@
 import React from "react";
-import CourseLanding from "../components/courseLanding";
-import CourseList from "../components/courseList";
-import CourseSearch from "../components/courseSearch";
+import CourseLanding from "../container/courseLanding";
+import CourseList from "../container/courseList";
+import CourseSearch from "../container/courseSearch";
 
 const Courses = () => {
   return (
