@@ -7,6 +7,8 @@ import useWindowSize from "../hooks/UseWindowSize";
 
 export const Header = () => {
   const [input, setInput] = useState("");
+  const [sideBar, setSideBar] = useState("side-drawer");
+  const [backDrop, setBack] = useState("");
   const [activeClass, setActive] = useState("hamburger");
 
   const decodeurl = (a, b) => {
@@ -78,9 +80,13 @@ export const Header = () => {
           className={activeClass}
           onClick={() => {
             if (activeClass === "hamburger") {
-              setActive("change");
+              setActive("block");
+              setSideBar("side-drawer open");
+              setBack("backdrop open");
             } else {
               setActive("hamburger");
+              setSideBar("side-drawer");
+              setBack("backdrop");
             }
           }}
         >
@@ -88,6 +94,69 @@ export const Header = () => {
           <div className="stick1"></div>
         </div>
       </nav>
+      <div className={sideBar}>
+        <div className="side-drawer--logo">
+          <img
+            onClick={() => {
+              window.location = "/";
+            }}
+            style={{ cursor: "pointer" }}
+            src="/assets/nRange-logo.png"
+            alt="header-logo"
+          />
+        </div>
+        <div className="side-drawer--input">
+          <input
+            type="text"
+            value={input}
+            onKeyPress={handleKeyDown}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Search Golf Courses"
+            className="side-drawer--input--search"
+          />
+          <Link
+            className="side-drawer--input--icon"
+            to={`/search?keyword=${input}`}
+          >
+            <FontAwesomeIcon className="search" icon={faSearch} size="1x" />
+          </Link>
+        </div>
+        <ul>
+          <li>
+            <Link
+              className="side-drawer--buttons"
+              to="/"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
+              Products
+            </Link>
+          </li>
+          <li>
+            <Link className="side-drawer--buttons" to="/courses">
+              Courses
+            </Link>
+          </li>
+          <li>
+            <HashLink
+              className="side-drawer--buttons"
+              smooth
+              to="/#subscribe-section"
+            >
+              Subscribe
+            </HashLink>
+          </li>
+        </ul>
+      </div>
+      <div
+        onClick={() => {
+          setActive("hamburger");
+          setSideBar("side-drawer");
+          setBack("backdrop");
+        }}
+        className={backDrop}
+      ></div>
     </div>
   );
 };

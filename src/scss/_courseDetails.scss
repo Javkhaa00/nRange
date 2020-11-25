@@ -51,6 +51,7 @@
 
 @include respond-between(sm, md) {
   .course-detail {
+    padding-bottom: 15%;
     &--wrapper {
       width: 85%;
     }
@@ -60,6 +61,7 @@
 @include respond-between(xs, sm) {
   .course-detail {
     padding-left: 5%;
+    padding-bottom: 15%;
     &--wrapper {
       width: 100%;
     }

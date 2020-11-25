@@ -147,6 +147,7 @@
 @include respond-between(xxs, xs) {
   .course-list {
     height: 135vh;
+    padding-bottom: 124px;
     &--lists {
       &--wrapper {
         width: 95%;
@@ -162,7 +163,7 @@
         }
         &--international {
           &--texts {
-            height: 87%;
+            height: 95%;
           }
         }
       }

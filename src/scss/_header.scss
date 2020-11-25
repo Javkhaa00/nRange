@@ -2,10 +2,11 @@
   width: 100%;
   background-color: rgb(5, 10, 22);
   display: flex;
-  position: fixed;
+  position: sticky;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  z-index: 10;
   &--nav {
     width: 60%;
     display: flex;
@@ -203,6 +204,9 @@
     }
     ul {
       display: none;
+    }
+    .hamburger {
+      display: inline-block !important;
     }
   }
 }

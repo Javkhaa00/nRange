@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 5;
   &--title {
     font-size: 40px;
     font-family: "Bebas Neue";
@@ -198,8 +199,17 @@
 
 @include respond-between(xxs, xs) {
   .subs {
+    padding-bottom: 64px;
+    padding-top: 64px;
+    &--desc {
+      width: 60%;
+    }
+    &--email {
+      width: 270px;
+    }
     &--wrapper {
       width: 85%;
+      display: none;
     }
   }
 }

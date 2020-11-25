@@ -8,14 +8,14 @@ import searchList from "./container/searchList";
 import Terms from "./pages/Terms";
 import CitiesByState from "./container/citiesByState";
 import CourseByCity from "./container/courseByCity";
-import Toolbar from "./container/toolbar";
+import Header from "./container/header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <Info />
-      <Toolbar />
+      <Header />
       <Switch>
         <Route path="/search" exact={true} component={searchList} />
         <Route
@@ -31,9 +31,9 @@ function App() {
         <Route exact path="/" component={Home}>
           <Home />
         </Route>
-        <Route exact path="/" component={Home}>
+        {/* <Route exact path="/" component={Home}>
           <Home />
-        </Route>
+        </Route> */}
         <Route path="/courses" exact={true} component={Courses}>
           <Courses />
         </Route>

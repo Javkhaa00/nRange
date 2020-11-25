@@ -45,26 +45,39 @@
 .pagination {
   list-style: none;
   display: flex;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Bebas Neue";
+  color: rgb(5, 10, 22);
+  text-align: center;
+  z-index: 1;
+  padding: 5px 20px 3px 20px;
+  border-radius: 10px;
+  outline: none;
   padding: 0;
+  li {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Bebas Neue";
+    color: rgb(5, 10, 22);
+    text-align: center;
+    z-index: 1;
+    padding: 5px 0px 3px 0px;
+  }
+  li a {
+    outline: none;
+    font-size: 16px;
+    color: rgb(5, 10, 22);
+  }
 }
 
 .active {
-  background-color: rgb(120, 188, 65);
+  color: green !important;
 }
 .previous {
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Open Sans", sans-serif;
-  color: #050a16;
-  line-height: 1.429;
+  border: 1px solid black;
 }
 .next {
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Open Sans", sans-serif;
-  color: #050a16;
-  line-height: 1.429;
+  border: 1px solid black;
 }
 
 @include respond-between(xlg, xxlg) {
@@ -112,7 +125,6 @@
   .search-list {
     &--wrapper {
       width: 100%;
-      // padding-left: 5%;
       padding-bottom: 64px;
       &--lists {
         width: 100%;
