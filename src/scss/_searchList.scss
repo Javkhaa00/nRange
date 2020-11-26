@@ -65,20 +65,28 @@
   }
   li a {
     outline: none;
-    font-size: 16px;
+    font-size: 18px;
     color: rgb(5, 10, 22);
   }
 }
 
-.active {
-  color: green !important;
+.active a {
+  color: rgb(120, 188, 65) !important;
+  text-decoration: underline;
+  font-size: 20px !important;
+  margin-top: -4px !important;
 }
-.previous {
-  border: 1px solid black;
+
+li a:hover {
+  color: rgb(120, 188, 65) !important;
 }
-.next {
-  border: 1px solid black;
-}
+
+// .previous a:hover {
+//   color: rgb(120, 188, 65) !important;
+// }
+// .next a:hover {
+//   color: rgb(120, 188, 65) !important;
+// }
 
 @include respond-between(xlg, xxlg) {
   .search-list {
@@ -133,5 +141,13 @@
         }
       }
     }
+  }
+  .pagination {
+    li a {
+      font-size: 16px;
+    }
+  }
+  .active a {
+    font-size: 18px !important;
   }
 }
