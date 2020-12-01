@@ -46,6 +46,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &--row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
     &--main {
       margin: 0 10% 0 10%;
       display: flex !important;
@@ -181,24 +188,73 @@
   }
 }
 
-@include respond-between(sm, md) {
+@include respond-between(tblet, md) {
   .subs {
+    height: unset;
+    padding-top: 48px;
+    padding-bottom: 148px;
     &--wrapper {
       width: 85%;
+      &--main {
+        margin: 0 5% 0 5%;
+        padding: 36px 24px 36px 24px;
+        zoom: 110%;
+      }
+      &--side {
+        padding: 36px 24px 36px 24px;
+      }
     }
   }
 }
 
-@include respond-between(xs, sm) {
+@include respond-between(xs, tblet) {
   .subs {
+    height: unset;
+    &--title {
+      padding-top: 36px;
+    }
     &--wrapper {
-      width: 85%;
+      width: 90%;
+      flex-direction: column;
+      padding-bottom: 136px;
+      &--side {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(245, 246, 254);
+        border-radius: 16px;
+        align-items: center;
+        height: 260px !important;
+        width: 30% !important;
+        margin: 10px !important;
+        padding: 24px 24px 24px 24px;
+        &--subscribe {
+          background-color: rgb(120, 188, 65);
+          color: rgb(255, 255, 255);
+          border-width: 2px;
+          border-color: rgb(120, 188, 65);
+          border-style: solid;
+        }
+        &--subscribe:hover {
+          background-color: white;
+          color: rgb(120, 188, 65);
+          transition: 0.2s;
+          border-width: 2px;
+          border-color: rgba(0, 0, 0, 0.102);
+          border-style: solid;
+        }
+      }
+      &--side:hover {
+        background-color: unset;
+        border-radius: unset;
+      }
     }
   }
 }
 
 @include respond-between(xxs, xs) {
   .subs {
+    height: unset;
     padding-bottom: 64px;
     padding-top: 64px;
     &--desc {
@@ -209,7 +265,39 @@
     }
     &--wrapper {
       width: 85%;
-      display: none;
+      flex-direction: column;
+      &--side {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(245, 246, 254);
+        border-radius: 16px;
+        align-items: center;
+        height: 220px !important;
+        width: 65% !important;
+        margin: 0 !important;
+        margin-bottom: 24px !important;
+        padding: 24px 24px 24px 24px;
+        &--subscribe {
+          background-color: rgb(120, 188, 65);
+          color: rgb(255, 255, 255);
+          border-width: 2px;
+          border-color: rgb(120, 188, 65);
+          border-style: solid;
+        }
+        &--subscribe:hover {
+          background-color: white;
+          color: rgb(120, 188, 65);
+          transition: 0.2s;
+          border-width: 2px;
+          border-color: rgba(0, 0, 0, 0.102);
+          border-style: solid;
+        }
+      }
+      &--side:hover {
+        background-color: unset;
+        border-radius: unset;
+      }
     }
   }
 }
