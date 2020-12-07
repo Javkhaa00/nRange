@@ -56,6 +56,7 @@ const SearchList = (props) => {
   }, [window.location.search]);
 
   const renderResult = (el) => {
+    console.log(el, "searchlist");
     return (
       <a
         href={`/courses/state/${el.st}/${el.city}`}
