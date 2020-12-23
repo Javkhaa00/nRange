@@ -256,13 +256,18 @@
 @include respond-between(lg, xlg) {
   .footer {
     &--sub {
+      height: 20%;
       &--hand-phone {
         img {
-          height: 420px;
+          height: 360px;
         }
       }
     }
+    &--download {
+      height: 70%;
+    }
     &--extra {
+      height: 30%;
       &--wrapper {
         width: 75%;
         &--row {
@@ -277,6 +282,7 @@
       }
     }
     &--all-rights {
+      height: 10%;
       width: 75%;
       &--wrapper {
         width: 60%;

@@ -70,6 +70,7 @@
 
 @include respond-between(lg, xlg) {
   .course-list {
+    height: 120vh;
     &--lists {
       &--wrapper {
         width: 75%;

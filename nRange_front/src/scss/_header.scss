@@ -126,13 +126,7 @@
   }
   &--buttons:hover {
     background-color: rgb(120, 188, 65);
-    color: rgb(30, 35, 46);
-    transition: 0.1s ease-in-out;
-  }
-  &--buttons:focus,
-  &--buttons:active {
-    background-color: rgb(120, 188, 65);
-    color: rgb(30, 35, 46);
+    color: rgb(30, 35, 46) !important;
     transition: 0.1s ease-in-out;
   }
 }

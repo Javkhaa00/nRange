@@ -80,8 +80,8 @@
 
 @include respond-between(lg, xlg) {
   .course-landing {
-    background-size: 90rem;
-    background-position-y: 15rem;
+    background-size: 60rem;
+    background-position-y: 10rem;
     &--title {
       padding-top: 4%;
     }
